@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist Expressions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-in;
+    }
+    ul {
+      line-height: 2;
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+    li::before {
+      content: '🧭';
+      position: absolute;
+      left: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Common Tourist Expressions</h1>
+  </header>
+  <main>
+    <ul>
+      <li>How much is this? - Berapa harganya ini?</li>
+      <li>Where is the nearest restroom? - Di mana kamar mandi terdekat?</li>
+      <li>Can you tell me about this place? - Bisakah Anda memberi tahu saya tentang tempat ini?</li>
+      <li>How do I get to the museum? - Bagaimana cara saya ke museum?</li>
+      <li>I need help. - Saya butuh bantuan.</li>
+    </ul>
+  </main>
+</body>
+</html>

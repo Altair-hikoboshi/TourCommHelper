@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Guide Expressions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-in;
+    }
+    ul {
+      line-height: 2;
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+    li::before {
+      content: '🎤';
+      position: absolute;
+      left: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Common Tour Guide Expressions</h1>
+  </header>
+  <main>
+    <ul>
+      <li>Welcome to our tour! - Selamat datang di tur kami!</li>
+      <li>Please follow me. - Silakan ikuti saya.</li>
+      <li>This is a historical building. - Ini adalah bangunan bersejarah.</li>
+      <li>If you have any questions, feel free to ask. - Jika Anda punya pertanyaan, silakan bertanya.</li>
+      <li>We'll take a short break here. - Kita akan beristirahat sebentar di sini.</li>
+    </ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Communication Helper</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgba(0, 51, 102, 0.85);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 50px 20px;
+    }
+    .option {
+      background: white;
+      padding: 50px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 260px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .option:hover {
+      transform: translateY(-10px) scale(1.05);
+      background: #e0f7fa;
+    }
+    .option::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+      background: radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+      transition: background 0.5s;
+      z-index: -1;
+    }
+    .option:active::after {
+      background-color: #b2ebf2;
+      background-size: 100%;
+      transition: background 0s;
+    }
+    a {
+      text-decoration: none;
+      color: #003366;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Tour Communication Helper</h1>
+  </header>
+  <div class="container">
+    <div class="option" onclick="location.href='tour-guide.html'">
+      <a href="tour-guide.html">I am a Tour Guide</a>
+    </div>
+    <div class="option" onclick="location.href='tourist.html'">
+      <a href="tourist.html">I am a Tourist</a>
+    </div>
+  </div>
+</body>
+</html>
