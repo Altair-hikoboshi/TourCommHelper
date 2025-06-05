@@ -1,64 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Guide Expressions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tourism Expression Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f8ff;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg-light: #f0f4f8;
+      --glass-bg: rgba(255, 255, 255, 0.25);
+      --card-hover: rgba(255, 255, 255, 0.5);
+      --border: rgba(255, 255, 255, 0.3);
+      --text-primary: #1c1c1e;
+      --text-secondary: #6c757d;
+      --accent: #228be6;
     }
+
+    * {
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+      min-height: 100vh;
+      padding-top: 80px;
+    }
+
     header {
-      background-color: #003366;
-      color: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(to right, #ffffffcc, #f8f9facf);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      z-index: 1000;
       padding: 20px;
       text-align: center;
     }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--text-primary);
+      letter-spacing: 0.5px;
+    }
+
+    .category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers buttons horizontally */
+  gap: 20px;
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+    .category-button {
+      background: var(--glass-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      backdrop-filter: blur(14px);
+      cursor: pointer;
+    }
+
+    .category-button:hover {
+      background: var(--card-hover);
+      color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .expressions {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
       background: white;
-      border-radius: 10px;
+      width: 100%;
+      max-width: 850px;
+      border-radius: 20px 20px 0 0;
       padding: 30px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 0.6s ease-in;
+      box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1);
+      display: none;
+      animation: slideUp 0.4s ease;
+      max-height: 85vh;
+      overflow-y: auto;
+      z-index: 999;
     }
-    ul {
-      line-height: 2;
-      list-style-type: none;
-      padding: 0;
+
+    .expressions h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.5rem;
     }
-    li {
-      margin-bottom: 15px;
-      padding-left: 20px;
-      position: relative;
+
+    .expression {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
     }
-    li::before {
-      content: '🎤';
-      position: absolute;
-      left: 0;
+
+    .expression strong {
+      color: var(--text-primary);
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    .expression em {
+      color: var(--text-secondary);
+      font-style: normal;
+    }
+
+    @keyframes slideUp {
+      from { transform: translate(-50%, 100%); opacity: 0; }
+      to { transform: translate(-50%, 0); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translate(-50%, 0); opacity: 1; }
+      to { transform: translate(-50%, 100%); opacity: 0; }
+    }
+
+    @media (max-width: 600px) {
+      .category-button {
+        font-size: 0.95rem;
+        padding: 16px;
+      }
+
+      .expression {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Common Tour Guide Expressions</h1>
+    <h1>Tour-Guide Expressions</h1>
   </header>
-  <main>
-    <ul>
-      <li>Welcome to our tour! - Selamat datang di tur kami!</li>
-      <li>Please follow me. - Silakan ikuti saya.</li>
-      <li>This is a historical building. - Ini adalah bangunan bersejarah.</li>
-      <li>If you have any questions, feel free to ask. - Jika Anda punya pertanyaan, silakan bertanya.</li>
-      <li>We'll take a short break here. - Kita akan beristirahat sebentar di sini.</li>
-    </ul>
-  </main>
+
+  <div class="category-container" id="category-container"></div>
+  <div class="expressions" id="expressions"></div>
+
+  <script>
+    const expressionsData = {
+    "Greeting and Welcoming Tourists": [ 
+  ["Welcome to Situbondo!", "Selamat datang di Situbondo!"],
+  ["Hello, everyone!", "Halo semuanya!"],
+  ["Good morning, how are you today?", "Selamat pagi, bagaimana kabarnya hari ini?"],
+  ["I’m your tour guide today.", "Saya adalah pemandu wisata Anda hari ini."],
+  ["Let me introduce myself.", "Perkenalkan, saya..."],
+  ["Nice to meet you!", "Senang bertemu dengan Anda!"],
+  ["We’re glad to have you here.", "Kami senang Anda di sini."],
+  ["Please stay with the group.", "Tolong tetap bersama rombongan."]
+],
+"Giving Directions and Instructions": [
+  ["Please follow me.", "Silakan ikuti saya."],
+  ["Watch your step.", "Hati-hati melangkah."],
+  ["We’ll turn left at the corner.", "Kita akan belok kiri di tikungan."],
+  ["Stay on the path.", "Tetap di jalur ini."],
+  ["We’ll stop here for a few minutes.", "Kita akan berhenti di sini beberapa menit."],
+  ["Please be careful, it's slippery.", "Tolong hati-hati, jalannya licin."],
+  ["We’re heading to the beach now.", "Kita akan menuju pantai sekarang."],
+  ["Let’s gather at the meeting point.", "Mari berkumpul di titik pertemuan."]
+],
+"Describing Places and Giving Information": [
+["This is Baluran National Park.", "Ini adalah Taman Nasional Baluran."],
+  ["It’s known as the Africa of Java.", "Tempat ini dikenal sebagai Afrikanya Jawa."],
+  ["Here you can see wild animals like deer and buffalo.", "Di sini Anda bisa melihat hewan liar seperti rusa dan kerbau."],
+  ["This temple was built in the 15th century.", "Candi ini dibangun pada abad ke-15."],
+  ["This beach is famous for its sunset.", "Pantai ini terkenal dengan matahari terbenamnya."],
+  ["This building is a Dutch heritage site.", "Bangunan ini adalah peninggalan Belanda."],
+  ["The mountain is active, but it’s safe to visit.", "Gunungnya aktif, tapi aman untuk dikunjungi."],
+  ["Let me tell you a bit of history.", "Izinkan saya bercerita sedikit tentang sejarahnya."]
+],
+ "Offering Help and Assistance": [
+["Do you need help?", "Apakah Anda butuh bantuan?"],
+  ["Can I take a photo for you?", "Bolehkah saya ambilkan foto Anda?"],
+  ["Do you want me to explain that again?", "Apakah Anda ingin saya jelaskan lagi?"],
+  ["Let me assist you.", "Biar saya bantu."],
+  ["Please let me know if you need anything.", "Beri tahu saya jika Anda butuh sesuatu."],
+  ["Do you have any questions?", "Apakah ada pertanyaan?"],
+  ["Would you like a recommendation?", "Ingin rekomendasi?"],
+  ["I’ll help you find it.", "Saya akan bantu menemukannya."]
+],
+"Recommending Local Food and Souvenirs": [
+  ["You should try our traditional food.", "Anda harus mencoba makanan tradisional kami."],
+  ["This is a popular local snack.", "Ini adalah camilan lokal yang populer."],
+  ["The market sells handmade souvenirs.", "Pasar ini menjual suvenir buatan tangan."],
+  ["I recommend this restaurant.", "Saya merekomendasikan restoran ini."],
+  ["Would you like to buy a souvenir?", "Ingin membeli suvenir?"],
+  ["This is a specialty from Situbondo.", "Ini adalah oleh-oleh khas Situbondo."]
+],
+" Making and Responding to Invitations": [
+["Would you like to join our afternoon walk?", "Mau ikut jalan sore kami?"],
+  ["Let’s explore the mangrove forest.", "Ayo kita jelajahi hutan mangrove."],
+  ["We’ll have a group photo after this.", "Kita akan berfoto bersama setelah ini."],
+  ["You are invited to our cultural show tonight.", "Anda diundang ke pertunjukan budaya malam ini."],
+  ["Please join us for dinner.", "Silakan bergabung untuk makan malam."],
+  ["We’ll meet again tomorrow morning.", "Kita akan bertemu lagi besok pagi."]
+],
+"Expressing Gratitude and Farewell": [
+["Thank you for joining the tour.", "Terima kasih telah ikut tur."],
+  ["I hope you had a great time.", "Saya harap Anda menikmati waktunya."],
+  ["Have a safe trip!", "Selamat perjalanan!"],
+  ["See you next time!", "Sampai jumpa lain waktu!"],
+  ["It was a pleasure guiding you.", "Senang sekali bisa memandu Anda."],
+  ["Goodbye and take care!", "Selamat tinggal dan hati-hati!"]
+],
+"Managing Time and Schedules": [
+  ["We will depart at 8 a.m.", "Kita akan berangkat pukul 8 pagi."],
+  ["Please be on time.", "Tolong datang tepat waktu."],
+  ["You have 30 minutes to explore.", "Anda punya waktu 30 menit untuk berkeliling."],
+  ["We’ll meet back here at noon.", "Kita akan bertemu kembali di sini pukul 12 siang."],
+  ["Lunch will be at 1 p.m.", "Makan siang akan dilakukan pukul 1 siang."],
+  ["We’re running a bit late.", "Kita sedikit terlambat."],
+  ["Let’s stick to the schedule.", "Mari kita tetap sesuai jadwal."],
+  ["We’ll leave after the show ends.", "Kita akan pergi setelah pertunjukan selesai."],
+  ["Please return to the bus by 3 p.m.", "Tolong kembali ke bus pukul 3 sore."],
+  ["I’ll remind you 10 minutes before departure.", "Saya akan mengingatkan 10 menit sebelum keberangkatan."]
+],
+"Ensuring Safety and Comfort": [
+  ["Please drink enough water.", "Tolong minum air yang cukup."],
+  ["Let me know if you feel unwell.", "Beri tahu saya jika Anda merasa tidak enak badan."],
+  ["Don’t wander off alone.", "Jangan berjalan sendiri."],
+  ["Keep your belongings safe.", "Jaga barang bawaan Anda."],
+  ["Please wear comfortable shoes.", "Tolong kenakan sepatu yang nyaman."],
+  ["Use sunscreen if needed.", "Gunakan tabir surya jika perlu."],
+  ["Watch your step on uneven ground.", "Perhatikan langkah Anda di tanah yang tidak rata."],
+  ["Let me know if you need a break.", "Beri tahu saya jika Anda butuh istirahat."],
+  ["Be careful around the animals.", "Hati-hati dengan hewan di sekitar."],
+  ["Emergency contacts are on this card.", "Kontak darurat ada di kartu ini."]
+]
+};    
+
+   const categoryContainer = document.getElementById("category-container");
+  const expressionsDiv = document.getElementById("expressions");
+
+// Show expressions with slideUp animation
+function showExpressions(category) {
+  const expressions = expressionsData[category];
+  expressionsDiv.innerHTML = `<h2>${category}</h2>` + expressions.map(pair =>
+    `<div class="expression"><strong>${pair[0]}</strong><br><em>${pair[1]}</em></div>`
+  ).join("");
+
+  expressionsDiv.style.display = "block";
+  expressionsDiv.style.animation = "slideUp 0.4s ease forwards";
+  expressionsDiv.scrollIntoView({ behavior: "smooth" });
+}
+
+// Hide expressions with slideDown animation
+function hideExpressions() {
+  expressionsDiv.style.animation = "slideDown 0.4s ease forwards";
+
+  // After animation ends, hide completely
+  expressionsDiv.addEventListener("animationend", function handler() {
+    expressionsDiv.style.display = "none";
+    expressionsDiv.removeEventListener("animationend", handler);
+  });
+}
+
+// Category buttons
+Object.keys(expressionsData).forEach(category => {
+  const button = document.createElement("button");
+  button.className = "category-button";
+  button.textContent = category;
+  button.onclick = (event) => {
+    event.stopPropagation();
+    showExpressions(category);
+  };
+  categoryContainer.appendChild(button);
+});
+
+// Hide panel when clicking outside
+document.addEventListener("click", function(event) {
+  if (!expressionsDiv.contains(event.target)) {
+    if (expressionsDiv.style.display === "block") {
+      hideExpressions();
+    }
+  }
+});
+
+// Prevent hiding when clicking inside the panel
+expressionsDiv.addEventListener("click", function(event) {
+  event.stopPropagation();
+});
+  </script>
 </body>
 </html>
