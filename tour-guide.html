@@ -247,6 +247,11 @@
         font-size: 1rem;
       }
     }
+
+    .expression.highlighted {
+  border: 2px solid orange;
+  background: #fff3cd !important;
+}
   </style>
 </head>
 
@@ -259,12 +264,15 @@
   <div class="expressions" id="expressions"></div>
   
   <script>
-    let voices = [];
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+let voices = [];
 
 function loadVoices() {
   voices = speechSynthesis.getVoices();
-
-  // Fallback if voices haven't loaded yet
   if (!voices.length) {
     speechSynthesis.onvoiceschanged = () => {
       voices = speechSynthesis.getVoices();
@@ -272,105 +280,44 @@ function loadVoices() {
   }
 }
 
-loadVoices(); // Call this once at the start
-
-      const expressionsData = {
-    "Greeting and Welcoming Tourists": [ 
-  ["Welcome to Situbondo!", "Selamat datang di Situbondo!"],
-  ["Hello, everyone!", "Halo semuanya!"],
-  ["Good morning, how are you today?", "Selamat pagi, bagaimana kabarnya hari ini?"],
-  ["I’m your tour guide today.", "Saya adalah pemandu wisata Anda hari ini."],
-  ["Let me introduce myself.", "Perkenalkan, saya..."],
-  ["Nice to meet you!", "Senang bertemu dengan Anda!"],
-  ["We’re glad to have you here.", "Kami senang Anda di sini."],
-  ["Please stay with the group.", "Tolong tetap bersama rombongan."]
-],
-"Giving Directions and Instructions": [
-  ["Please follow me.", "Silakan ikuti saya."],
-  ["Watch your step.", "Hati-hati melangkah."],
-  ["We’ll turn left at the corner.", "Kita akan belok kiri di tikungan."],
-  ["Stay on the path.", "Tetap di jalur ini."],
-  ["We’ll stop here for a few minutes.", "Kita akan berhenti di sini beberapa menit."],
-  ["Please be careful, it's slippery.", "Tolong hati-hati, jalannya licin."],
-  ["We’re heading to the beach now.", "Kita akan menuju pantai sekarang."],
-  ["Let’s gather at the meeting point.", "Mari berkumpul di titik pertemuan."]
-],
-"Describing Places and Giving Information": [
-["This is Baluran National Park.", "Ini adalah Taman Nasional Baluran."],
-  ["It’s known as the Africa of Java.", "Tempat ini dikenal sebagai Afrikanya Jawa."],
-  ["Here you can see wild animals like deer and buffalo.", "Di sini Anda bisa melihat hewan liar seperti rusa dan kerbau."],
-  ["This temple was built in the 15th century.", "Candi ini dibangun pada abad ke-15."],
-  ["This beach is famous for its sunset.", "Pantai ini terkenal dengan matahari terbenamnya."],
-  ["This building is a Dutch heritage site.", "Bangunan ini adalah peninggalan Belanda."],
-  ["The mountain is active, but it’s safe to visit.", "Gunungnya aktif, tapi aman untuk dikunjungi."],
-  ["Let me tell you a bit of history.", "Izinkan saya bercerita sedikit tentang sejarahnya."]
-],
- "Offering Help and Assistance": [
-["Do you need help?", "Apakah Anda butuh bantuan?"],
-  ["Can I take a photo for you?", "Bolehkah saya ambilkan foto Anda?"],
-  ["Do you want me to explain that again?", "Apakah Anda ingin saya jelaskan lagi?"],
-  ["Let me assist you.", "Biar saya bantu."],
-  ["Please let me know if you need anything.", "Beri tahu saya jika Anda butuh sesuatu."],
-  ["Do you have any questions?", "Apakah ada pertanyaan?"],
-  ["Would you like a recommendation?", "Ingin rekomendasi?"],
-  ["I’ll help you find it.", "Saya akan bantu menemukannya."]
-],
-"Recommending Local Food and Souvenirs": [
-  ["You should try our traditional food.", "Anda harus mencoba makanan tradisional kami."],
-  ["This is a popular local snack.", "Ini adalah camilan lokal yang populer."],
-  ["The market sells handmade souvenirs.", "Pasar ini menjual suvenir buatan tangan."],
-  ["I recommend this restaurant.", "Saya merekomendasikan restoran ini."],
-  ["Would you like to buy a souvenir?", "Ingin membeli suvenir?"],
-  ["This is a specialty from Situbondo.", "Ini adalah oleh-oleh khas Situbondo."]
-],
-" Making and Responding to Invitations": [
-["Would you like to join our afternoon walk?", "Mau ikut jalan sore kami?"],
-  ["Let’s explore the mangrove forest.", "Ayo kita jelajahi hutan mangrove."],
-  ["We’ll have a group photo after this.", "Kita akan berfoto bersama setelah ini."],
-  ["You are invited to our cultural show tonight.", "Anda diundang ke pertunjukan budaya malam ini."],
-  ["Please join us for dinner.", "Silakan bergabung untuk makan malam."],
-  ["We’ll meet again tomorrow morning.", "Kita akan bertemu lagi besok pagi."]
-],
-"Expressing Gratitude and Farewell": [
-["Thank you for joining the tour.", "Terima kasih telah ikut tur."],
-  ["I hope you had a great time.", "Saya harap Anda menikmati waktunya."],
-  ["Have a safe trip!", "Selamat perjalanan!"],
-  ["See you next time!", "Sampai jumpa lain waktu!"],
-  ["It was a pleasure guiding you.", "Senang sekali bisa memandu Anda."],
-  ["Goodbye and take care!", "Selamat tinggal dan hati-hati!"]
-],
-"Managing Time and Schedules": [
-  ["We will depart at 8 a.m.", "Kita akan berangkat pukul 8 pagi."],
-  ["Please be on time.", "Tolong datang tepat waktu."],
-  ["You have 30 minutes to explore.", "Anda punya waktu 30 menit untuk berkeliling."],
-  ["We’ll meet back here at noon.", "Kita akan bertemu kembali di sini pukul 12 siang."],
-  ["Lunch will be at 1 p.m.", "Makan siang akan dilakukan pukul 1 siang."],
-  ["We’re running a bit late.", "Kita sedikit terlambat."],
-  ["Let’s stick to the schedule.", "Mari kita tetap sesuai jadwal."],
-  ["We’ll leave after the show ends.", "Kita akan pergi setelah pertunjukan selesai."],
-  ["Please return to the bus by 3 p.m.", "Tolong kembali ke bus pukul 3 sore."],
-  ["I’ll remind you 10 minutes before departure.", "Saya akan mengingatkan 10 menit sebelum keberangkatan."]
-],
-"Ensuring Safety and Comfort": [
-  ["Please drink enough water.", "Tolong minum air yang cukup."],
-  ["Let me know if you feel unwell.", "Beri tahu saya jika Anda merasa tidak enak badan."],
-  ["Don’t wander off alone.", "Jangan berjalan sendiri."],
-  ["Keep your belongings safe.", "Jaga barang bawaan Anda."],
-  ["Please wear comfortable shoes.", "Tolong kenakan sepatu yang nyaman."],
-  ["Use sunscreen if needed.", "Gunakan tabir surya jika perlu."],
-  ["Watch your step on uneven ground.", "Perhatikan langkah Anda di tanah yang tidak rata."],
-  ["Let me know if you need a break.", "Beri tahu saya jika Anda butuh istirahat."],
-  ["Be careful around the animals.", "Hati-hati dengan hewan di sekitar."],
-  ["Emergency contacts are on this card.", "Kontak darurat ada di kartu ini."]
-]
-};    
+loadVoices();
 
 const categoryContainer = document.getElementById("category-container");
-  const expressionsDiv = document.getElementById("expressions");
+const expressionsDiv = document.getElementById("expressions");
 
-// Show expressions with slideUp animation
+let fetchedData = {};
+let highlightedOnce = false;  // <-- flag to prevent multiple highlights
+
+fetch('tour-guide.json')
+  .then(res => res.json())
+  .then(data => {
+    fetchedData = data;
+
+    // Show category if URL param exists
+    const selectedCategory = getQueryParam('category');
+    if (selectedCategory && fetchedData[selectedCategory]) {
+      showExpressions(selectedCategory);
+    }
+
+    Object.keys(data).forEach((category, i) => {
+      const button = document.createElement("button");
+      button.className = "category-button";
+      button.textContent = category;
+      button.style.setProperty('--i', i);
+      button.onclick = (event) => {
+        event.stopPropagation();
+        showExpressions(category);
+      };
+      categoryContainer.appendChild(button);
+    });
+  })
+  .catch(err => {
+    categoryContainer.textContent = 'Failed to load categories.';
+    console.error(err);
+  });
+
 function showExpressions(category) {
-  const expressions = expressionsData[category];
+  const expressions = fetchedData[category];
   expressionsDiv.innerHTML = `<h2>${category}</h2>` + expressions.map((pair, i) =>
     `<div class="expression" style="--i:${i}">
        <div class="expression-content">
@@ -383,39 +330,46 @@ function showExpressions(category) {
            <button onclick="speakText(\`${pair[1]}\`, 'id')" aria-label="Play Indonesian">🔊 ID</button>
          </div>
        </div>
-     </div>`
-  ).join("");
+     </div>`).join("");
 
   expressionsDiv.style.display = "block";
   expressionsDiv.style.animation = "slideUp 0.4s ease forwards";
   expressionsDiv.scrollIntoView({ behavior: "smooth" });
+
+  // Highlight by index param — only once on page load
+  if (!highlightedOnce) {
+    const indexToHighlight = parseInt(getQueryParam('index'));
+    if (!isNaN(indexToHighlight)) {
+      const expressionElems = document.querySelectorAll('.expression');
+      const targetIndex = indexToHighlight; // convert 1-based to 0-based
+      if (expressionElems[targetIndex]) {
+        expressionElems[targetIndex].classList.add('highlighted');
+        setTimeout(() => {
+          expressionElems[targetIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+    }
+    highlightedOnce = true; // Prevent future highlights
+  }
 }
 
-// Hide expressions with slideDown animation
+// Speak text function (outside showExpressions)
+function speakText(text, lang) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang === 'id' ? 'id-ID' : 'en-US';
+  speechSynthesis.speak(utterance);
+}
+
+// Hide expressions panel with animation
 function hideExpressions() {
   expressionsDiv.style.animation = "slideDown 0.4s ease forwards";
-
-  // After animation ends, hide completely
   expressionsDiv.addEventListener("animationend", function handler() {
     expressionsDiv.style.display = "none";
     expressionsDiv.removeEventListener("animationend", handler);
   });
 }
 
-// Category buttons
-Object.keys(expressionsData).forEach((category, i) => {
-  const button = document.createElement("button");
-  button.className = "category-button";
-  button.textContent = category;
-  button.style.setProperty('--i', i);
-  button.onclick = (event) => {
-    event.stopPropagation();
-    showExpressions(category);
-  };
-  categoryContainer.appendChild(button);
-});
-
-// Hide panel when clicking outside
+// Hide panel when clicking outside it
 document.addEventListener("click", function(event) {
   if (!expressionsDiv.contains(event.target)) {
     if (expressionsDiv.style.display === "block") {
@@ -424,16 +378,10 @@ document.addEventListener("click", function(event) {
   }
 });
 
-// Prevent hiding when clicking inside the panel
+// Prevent hiding when clicking inside the expressions div
 expressionsDiv.addEventListener("click", function(event) {
   event.stopPropagation();
 });
-
-function speakText(text, lang) {
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang === 'id' ? 'id-ID' : 'en-US';
-  speechSynthesis.speak(utterance);
-}
   </script>
 </body>
 </html>
