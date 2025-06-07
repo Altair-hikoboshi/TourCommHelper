@@ -146,26 +146,38 @@ let touristData = {};
     // Language switching logic
     let currentLanguage = 'id';
     function switchLanguage(lang) {
-      currentLanguage = lang;
-      // Update placeholder for accessibility
-      if (lang === 'id') {
-        searchInput.placeholder = 'Ketik kata kunci atau kategori...';
-        document.getElementById('app-name').textContent = 'TourMate';
-        document.getElementById('description').textContent =
-          'TourMate adalah aplikasi praktis dan ramah pengguna yang dirancang khusus untuk membantu pemandu wisata dan wisatawan berkomunikasi dengan lebih mudah di berbagai situasi perjalanan. Aplikasi ini menyajikan ratusan ekspresi penting dalam Bahasa Indonesia dan Bahasa Inggris, dikelompokkan ke dalam 9 kategori wisata, mulai dari sambutan, tanya arah, belanja, hingga situasi darurat. Dengan TourMate, Anda tidak perlu bingung mencari kata-kata yang tepat saat menemani turis mancanegara atau menjelajahi tempat baru di Indonesia. Cukup buka aplikasi, pilih kategori, dan temukan ekspresi yang Anda butuhkan — cepat, tepat, dan sesuai konteks!';
-        document.getElementById('closing').textContent = 'TourMate, sahabat terbaik Anda dalam menjembatani bahasa dan budaya saat berwisata!';
-      } else {
-        searchInput.placeholder = 'Type keywords or categories...';
-        document.getElementById('app-name').textContent = 'TourMate';
-        document.getElementById('description').textContent =
-          'TourMate is a practical and user-friendly app designed specifically to help tour guides and tourists communicate more easily in various travel situations. The app presents hundreds of essential expressions in Indonesian and English, grouped into 9 travel categories, from greetings, asking directions, shopping, to emergency situations. With TourMate, you don’t need to struggle finding the right words when accompanying international tourists or exploring new places in Indonesia. Just open the app, choose a category, and find the expressions you need — fast, accurate, and context-appropriate!';
-        document.getElementById('closing').textContent = 'TourMate, your best friend in bridging language and culture while traveling!';
-      }
-      searchInput.value = '';
-      searchResults.innerHTML = '';
-      clearBtn.classList.remove('visible');
-      searchInput.focus();
-    }
+  currentLanguage = lang;
+
+  if (lang === 'id') {
+    searchInput.placeholder = 'Ketik kata kunci atau kategori...';
+    document.getElementById('app-name').textContent = 'TourMate';
+    document.getElementById('description').textContent =
+      'TourMate adalah aplikasi praktis dan ramah pengguna yang dirancang khusus untuk membantu pemandu wisata dan wisatawan berkomunikasi dengan lebih mudah di berbagai situasi perjalanan. Aplikasi ini menyajikan ratusan ekspresi penting dalam Bahasa Indonesia dan Bahasa Inggris, dikelompokkan ke dalam 9 kategori wisata, mulai dari sambutan, tanya arah, belanja, hingga situasi darurat. Dengan TourMate, Anda tidak perlu bingung mencari kata-kata yang tepat saat menemani turis mancanegara atau menjelajahi tempat baru di Indonesia. Cukup buka aplikasi, pilih kategori, dan temukan ekspresi yang Anda butuhkan — cepat, tepat, dan sesuai konteks!';
+    document.getElementById('closing').textContent =
+      'TourMate, sahabat terbaik Anda dalam menjembatani bahasa dan budaya saat berwisata!';
+
+    // Update buttons
+    document.getElementById('btnTourist').textContent = 'Saya adalah Turis';
+    document.getElementById('btnTourGuide').textContent = 'Saya adalah Tour Guide';
+
+  } else {
+    searchInput.placeholder = 'Type keywords or categories...';
+    document.getElementById('app-name').textContent = 'TourMate';
+    document.getElementById('description').textContent =
+      'TourMate is a practical and user-friendly app designed specifically to help tour guides and tourists communicate more easily in various travel situations. The app presents hundreds of essential expressions in Indonesian and English, grouped into 9 travel categories, from greetings, asking directions, shopping, to emergency situations. With TourMate, you don’t need to struggle finding the right words when accompanying international tourists or exploring new places in Indonesia. Just open the app, choose a category, and find the expressions you need — fast, accurate, and context-appropriate!';
+    document.getElementById('closing').textContent =
+      'TourMate, your best friend in bridging language and culture while traveling!';
+
+    // Update buttons
+    document.getElementById('btnTourist').textContent = 'I am a Tourist';
+    document.getElementById('btnTourGuide').textContent = 'I am a Tour Guide';
+  }
+
+  searchInput.value = '';
+  searchResults.innerHTML = '';
+  clearBtn.classList.remove('visible');
+  searchInput.focus();
+}
 
     // Initialize data and UI on load
     window.addEventListener('load', () => {
