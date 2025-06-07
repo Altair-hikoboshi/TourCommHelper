@@ -247,6 +247,11 @@
         font-size: 1rem;
       }
     }
+
+    .expression.highlighted {
+  border: 2px solid orange;
+  background: #fff3cd !important;
+}
   </style>
 </head>
 
@@ -259,12 +264,15 @@
   <div class="expressions" id="expressions"></div>
   
   <script>
-    let voices = [];
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+let voices = [];
 
 function loadVoices() {
   voices = speechSynthesis.getVoices();
-
-  // Fallback if voices haven't loaded yet
   if (!voices.length) {
     speechSynthesis.onvoiceschanged = () => {
       voices = speechSynthesis.getVoices();
@@ -272,125 +280,44 @@ function loadVoices() {
   }
 }
 
-loadVoices(); // Call this once at the start
-
-    const expressionsData = {
-  "Arriving and Checking In": [
-    ["I have a reservation.", "Saya punya reservasi."],
-    ["Can I check in now?", "Bisakah saya check-in sekarang?"],
-    ["I’d like to check out.", "Saya ingin check-out."],
-    ["Where is the reception?", "Di mana resepsionisnya?"],
-    ["Can I have the room key?", "Boleh saya minta kunci kamar?"],
-    ["Is breakfast included?", "Apakah sarapan sudah termasuk?"],
-    ["What time is check-out?", "Jam berapa waktu check-out?"],
-    ["I need help with my luggage.", "Saya butuh bantuan dengan koper saya."],
-    ["Is there Wi-Fi here?", "Apakah di sini ada Wi-Fi?"],
-    ["Can I get a map of the area?", "Boleh minta peta daerah ini?"]
-  ],
-  "Getting Around": [
-    ["Where can I get a taxi?", "Di mana saya bisa mendapatkan taksi?"],
-    ["How much is the fare?", "Berapa ongkosnya?"],
-    ["Can you take me to the beach?", "Bisakah Anda mengantar saya ke pantai?"],
-    ["Is it far from here?", "Apakah itu jauh dari sini?"],
-    ["I want to rent a motorbike.", "Saya ingin menyewa motor."],
-    ["Where is the nearest bus stop?", "Di mana halte bus terdekat?"],
-    ["How do I get to the station?", "Bagaimana cara ke stasiun?"],
-    ["Can I walk there?", "Bisa jalan kaki ke sana?"],
-    ["Is it safe to go at night?", "Apakah aman pergi malam-malam?"],
-    ["Please stop here.", "Tolong berhenti di sini."]
-  ],
-  "Ordering Food and Drinks": [
-    ["Can I see the menu?", "Boleh saya lihat menu?"],
-    ["What do you recommend?", "Apa rekomendasi Anda?"],
-    ["I’d like this one.", "Saya mau yang ini."],
-    ["Is this spicy?", "Apakah ini pedas?"],
-    ["I don’t eat meat.", "Saya tidak makan daging."],
-    ["I’m allergic to peanuts.", "Saya alergi kacang."],
-    ["Can I get the bill?", "Boleh minta tagihannya?"],
-    ["That was delicious!", "Itu enak sekali!"],
-    ["Is service included?", "Apakah biaya layanan sudah termasuk?"],
-    ["Do you have vegetarian options?", "Apakah ada pilihan vegetarian?"]
-  ],
-  "Sightseeing and Asking Questions": [
-    ["What is this place called?", "Apa nama tempat ini?"],
-    ["Can you tell me more about this?", "Bisa jelaskan lebih lanjut tentang ini?"],
-    ["Are there any tours available?", "Apakah ada tur yang tersedia?"],
-    ["What time does it open?", "Jam berapa tempat ini buka?"],
-    ["How much is the entrance fee?", "Berapa biaya masuknya?"],
-    ["Can I take photos here?", "Boleh memotret di sini?"],
-    ["Is there a guide available?", "Apakah ada pemandu?"],
-    ["How long does the tour take?", "Berapa lama tournya?"],
-    ["Where is the next stop?", "Di mana perhentian berikutnya?"],
-    ["Is there a restroom nearby?", "Apakah ada toilet di dekat sini?"]
-  ],
-  "Shopping and Bargaining": [
-    ["How much is this?", "Berapa harganya?"],
-    ["Can I try it on?", "Boleh saya coba dulu?"],
-    ["Do you have this in another size?", "Ada ukuran lain?"],
-    ["Can I get a discount?", "Bisa minta diskon?"],
-    ["I’m just looking, thank you.", "Saya hanya melihat-lihat, terima kasih."],
-    ["It’s too expensive.", "Terlalu mahal."],
-    ["I’ll take it.", "Saya ambil ini."],
-    ["Is this handmade?", "Apakah ini buatan tangan?"],
-    ["Where was this made?", "Ini dibuat di mana?"],
-    ["Is it a local product?", "Apakah ini produk lokal?"]
-  ],
-  "Emergencies and Help": [
-    ["I need help.", "Saya butuh bantuan."],
-    ["Call the police!", "Panggil polisi!"],
-    ["Is there a hospital nearby?", "Apakah ada rumah sakit di dekat sini?"],
-    ["I’ve lost my passport.", "Saya kehilangan paspor saya."],
-    ["I’ve been robbed.", "Saya telah dirampok."],
-    ["Can you help me?", "Bisakah Anda membantu saya?"],
-    ["I don’t feel well.", "Saya tidak enak badan."],
-    ["Where is the nearest pharmacy?", "Di mana apotek terdekat?"],
-    ["I need a doctor.", "Saya butuh dokter."],
-    ["I’m allergic to...", "Saya alergi terhadap..."]
-  ],
-  "Expressing Gratitude and Courtesy": [
-    ["Thank you very much!", "Terima kasih banyak!"],
-    ["That’s very kind of you.", "Anda baik sekali."],
-    ["I appreciate it.", "Saya menghargainya."],
-    ["You’ve been very helpful.", "Anda sangat membantu."],
-    ["Sorry, I don’t understand.", "Maaf, saya tidak mengerti."],
-    ["Do you speak English?", "Apakah Anda bisa bahasa Inggris?"],
-    ["Excuse me.", "Permisi."],
-    ["Sorry!", "Maaf!"],
-    ["Please.", "Tolong."],
-    ["You're welcome.", "Sama-sama."]
-  ],
-  "At the Airport": [
-  ["Where is the check-in counter?", "Di mana loket check-in?"],
-  ["Can I have a window seat?", "Boleh minta kursi di dekat jendela?"],
-  ["What time is the boarding?", "Jam berapa naik pesawat?"],
-  ["Where is the gate?", "Di mana gerbangnya?"],
-  ["Is the flight on time?", "Apakah penerbangannya tepat waktu?"],
-  ["I’ve lost my luggage.", "Saya kehilangan bagasi saya."],
-  ["Where is the immigration office?", "Di mana kantor imigrasi?"],
-  ["Do I need to fill out a customs form?", "Apakah saya perlu mengisi formulir bea cukai?"],
-  ["This is my boarding pass.", "Ini boarding pass saya."],
-  ["Where can I exchange money?", "Di mana saya bisa menukar uang?"]
-],
-"Talking About Activities and Plans": [
-  ["What can we do here?", "Apa yang bisa kita lakukan di sini?"],
-  ["Is there anything interesting nearby?", "Ada sesuatu yang menarik di sekitar sini?"],
-  ["Can we go snorkeling?", "Bisa snorkeling di sini?"],
-  ["I’d like to visit the waterfall.", "Saya ingin mengunjungi air terjun."],
-  ["Is there a cultural show tonight?", "Apakah ada pertunjukan budaya malam ini?"],
-  ["Where can we go hiking?", "Di mana kita bisa hiking?"],
-  ["What time does it start?", "Jam berapa itu dimulai?"],
-  ["I’m planning to visit the market.", "Saya berencana mengunjungi pasar."],
-  ["We’re going to the hot springs.", "Kami akan pergi ke pemandian air panas."],
-  ["Let’s take some photos here.", "Ayo ambil foto di sini."]
-]
-};
+loadVoices();
 
 const categoryContainer = document.getElementById("category-container");
-  const expressionsDiv = document.getElementById("expressions");
+const expressionsDiv = document.getElementById("expressions");
 
-// Show expressions with slideUp animation
+let fetchedData = {};
+let highlightedOnce = false;  // <-- flag to prevent multiple highlights
+
+fetch('tourist.json')
+  .then(res => res.json())
+  .then(data => {
+    fetchedData = data;
+
+    // Show category if URL param exists
+    const selectedCategory = getQueryParam('category');
+    if (selectedCategory && fetchedData[selectedCategory]) {
+      showExpressions(selectedCategory);
+    }
+
+    Object.keys(data).forEach((category, i) => {
+      const button = document.createElement("button");
+      button.className = "category-button";
+      button.textContent = category;
+      button.style.setProperty('--i', i);
+      button.onclick = (event) => {
+        event.stopPropagation();
+        showExpressions(category);
+      };
+      categoryContainer.appendChild(button);
+    });
+  })
+  .catch(err => {
+    categoryContainer.textContent = 'Failed to load categories.';
+    console.error(err);
+  });
+
 function showExpressions(category) {
-  const expressions = expressionsData[category];
+  const expressions = fetchedData[category];
   expressionsDiv.innerHTML = `<h2>${category}</h2>` + expressions.map((pair, i) =>
     `<div class="expression" style="--i:${i}">
        <div class="expression-content">
@@ -403,39 +330,46 @@ function showExpressions(category) {
            <button onclick="speakText(\`${pair[1]}\`, 'id')" aria-label="Play Indonesian">🔊 ID</button>
          </div>
        </div>
-     </div>`
-  ).join("");
+     </div>`).join("");
 
   expressionsDiv.style.display = "block";
   expressionsDiv.style.animation = "slideUp 0.4s ease forwards";
   expressionsDiv.scrollIntoView({ behavior: "smooth" });
+
+  // Highlight by index param — only once on page load
+  if (!highlightedOnce) {
+    const indexToHighlight = parseInt(getQueryParam('index'));
+    if (!isNaN(indexToHighlight)) {
+      const expressionElems = document.querySelectorAll('.expression');
+      const targetIndex = indexToHighlight; // convert 1-based to 0-based
+      if (expressionElems[targetIndex]) {
+        expressionElems[targetIndex].classList.add('highlighted');
+        setTimeout(() => {
+          expressionElems[targetIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      }
+    }
+    highlightedOnce = true; // Prevent future highlights
+  }
 }
 
-// Hide expressions with slideDown animation
+// Speak text function (outside showExpressions)
+function speakText(text, lang) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang === 'id' ? 'id-ID' : 'en-US';
+  speechSynthesis.speak(utterance);
+}
+
+// Hide expressions panel with animation
 function hideExpressions() {
   expressionsDiv.style.animation = "slideDown 0.4s ease forwards";
-
-  // After animation ends, hide completely
   expressionsDiv.addEventListener("animationend", function handler() {
     expressionsDiv.style.display = "none";
     expressionsDiv.removeEventListener("animationend", handler);
   });
 }
 
-// Category buttons
-Object.keys(expressionsData).forEach((category, i) => {
-  const button = document.createElement("button");
-  button.className = "category-button";
-  button.textContent = category;
-  button.style.setProperty('--i', i);
-  button.onclick = (event) => {
-    event.stopPropagation();
-    showExpressions(category);
-  };
-  categoryContainer.appendChild(button);
-});
-
-// Hide panel when clicking outside
+// Hide panel when clicking outside it
 document.addEventListener("click", function(event) {
   if (!expressionsDiv.contains(event.target)) {
     if (expressionsDiv.style.display === "block") {
@@ -444,16 +378,10 @@ document.addEventListener("click", function(event) {
   }
 });
 
-// Prevent hiding when clicking inside the panel
+// Prevent hiding when clicking inside the expressions div
 expressionsDiv.addEventListener("click", function(event) {
   event.stopPropagation();
 });
-
-function speakText(text, lang) {
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang === 'id' ? 'id-ID' : 'en-US';
-  speechSynthesis.speak(utterance);
-}
   </script>
 </body>
 </html>
