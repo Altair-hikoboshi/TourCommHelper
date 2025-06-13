@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PataLingo</title>
+  <link rel="icon" type="image/png" href="assets/logo-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="PataLingo membantu wisatawan dan pemandu wisata berkomunikasi dengan ekspresi penting dalam Bahasa Indonesia & Inggris.">
+</head>
+
+<body class="index">
+  <button id="sidebarToggle" aria-label="Toggle sidebar" class="sidebar-toggle">
+  ☰
+</button>
+
+<!-- Collapsible Sidebar -->
+<nav id="sidebar" aria-label="Sidebar menu" class="sidebar">
+  <ul>
+  <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+  <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+  <li><a href="favorites.html"><i class="fas fa-star"></i> Favorites</a></li>
+  <li><a href="quiz.html"><i class="fa fa-question"></i> Quizzes</a></li>
+</ul>
+</nav>
+
+  <div class="container">
+    <!-- Language Switch + Search -->
+    <div class="language-switch">
+      <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Type keywords or categories..." autocomplete="off" aria-label="Search expressions" />
+        <div id="clearBtn" role="button" aria-label="Clear search input" title="Clear">&times;</div>
+        <div id="searchResults" role="listbox" aria-live="polite"></div>
+      </div>
+      <button onclick="switchLanguage('id')" aria-label="Bahasa Indonesia">
+        <img src="assets/flags/id.png" alt="Bendera Indonesia" title="Bahasa Indonesia" />
+      </button>
+      <button onclick="switchLanguage('en')" aria-label="English">
+        <img src="assets/flags/us.png" alt="US Flag" title="English" />
+      </button>
+    </div>
+
+    <!-- Left side: Logo + Name + Description -->
+    <div class="left">
+      <img src="assets/logo/logo.png" alt="App Logo" class="logo" onerror="this.style.display='none';" />
+      <div class="app-name" id="app-name">PataLingo</div>
+      <p class="description" id="description">
+        PataLingo adalah aplikasi praktis dan ramah pengguna yang dirancang khusus untuk membantu pemandu wisata dan wisatawan berkomunikasi dengan lebih mudah di berbagai situasi perjalanan. Aplikasi ini menyajikan ratusan ekspresi penting dalam Bahasa Indonesia dan Bahasa Inggris, dikelompokkan ke dalam 9 kategori wisata, mulai dari sambutan, tanya arah, belanja, hingga situasi darurat.
+        Dengan PataLingo, Anda tidak perlu bingung mencari kata-kata yang tepat saat menemani turis mancanegara atau menjelajahi tempat baru di Indonesia. Cukup buka aplikasi, pilih kategori, dan temukan ekspresi yang Anda butuhkan — cepat, tepat, dan sesuai konteks!
+      </p>
+      <p class="closing" id="closing">
+        PataLingo, sahabat terbaik Anda dalam menjembatani bahasa dan budaya saat berwisata!
+      </p>
+      <p class="copyright">
+        © 2025 PataLingo by LAN. All rights reserved.
+      </p>
+    </div>
+
+    <!-- Right side: Buttons -->
+    <div class="right">
+     <div class="buttons">
+  <a id="btnTourist" href="tourist.html" aria-label="Tourist mode">Saya adalah Turis</a>
+  <a id="btnTourGuide" href="tour-guide.html" aria-label="Tour Guide mode">Saya adalah Tour Guide</a>
+</div>
+    </div>
+  </div>
+
+  <script src="main-scripts.js"></script>
+</body>
+</html>

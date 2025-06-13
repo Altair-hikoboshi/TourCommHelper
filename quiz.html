@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Categories</title>
+  <link rel="icon" type="image/png" href="assets/logo-icon.png" />
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body class="quiz-body" id="quiz-body">
+  <div class="container">
+    <h1 class="title">Choose Your Quiz Category</h1>
+    
+    <div class="quiz-grid">
+  <div class="quiz-card">
+    <h2>Multiple Choice</h2>
+    <p>Click below to choose from 5 quizzes</p>
+    <button onclick="showQuizzes('multiple')">Choose the Quiz</button>
+  </div>
+
+  <div class="quiz-card">
+    <h2>Short Answer</h2>
+    <p>Click below to choose from 5 quizzes</p>
+    <button onclick="showQuizzes('short')">Choose the Quiz</button>
+  </div>
+
+  <div class="quiz-card">
+    <h2>Matching</h2>
+    <p>Click below to choose from 5 quizzes</p>
+    <button onclick="showQuizzes('matching')">Choose the Quiz</button>
+  </div>
+</div>
+
+<div id="quiz-list" class="quiz-list" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script src="navbar.js"></script>
+</body>
+</html>
