@@ -7,7 +7,10 @@
     ["Let me introduce myself.", "Perkenalkan, saya..."],
     ["Nice to meet you!", "Senang bertemu dengan Anda!"],
     ["We’re glad to have you here.", "Kami senang Anda di sini."],
-    ["Please stay with the group.", "Tolong tetap bersama rombongan."]
+    ["Please stay with the group.", "Tolong tetap bersama rombongan."],
+    ["We love welcoming eco-friendly travelers.", "Kami senang menyambut wisatawan yang peduli lingkungan."],
+    ["Let’s enjoy Situbondo while keeping it clean.", "Mari nikmati Situbondo sambil menjaganya tetap bersih."],
+    ["Together, let’s respect nature during our tour.", "Mari bersama-sama menghargai alam selama tur."]
   ],
   "Giving Directions and Instructions": [
     ["Please follow me.", "Silakan ikuti saya."],
@@ -17,74 +20,98 @@
     ["We’ll stop here for a few minutes.", "Kita akan berhenti di sini beberapa menit."],
     ["Please be careful, it's slippery.", "Tolong hati-hati, jalannya licin."],
     ["We’re heading to the beach now.", "Kita akan menuju pantai sekarang."],
-    ["Let’s gather at the meeting point.", "Mari berkumpul di titik pertemuan."]
+    ["Let’s gather at the meeting point.", "Mari berkumpul di titik pertemuan."],
+    ["Please do not litter along the way.", "Tolong jangan buang sampah sembarangan di jalan."],
+    ["Stay on the trail to protect the plants.", "Tetap di jalur untuk melindungi tanaman."],
+    ["Let’s reduce noise to avoid disturbing wildlife.", "Mari kurangi kebisingan agar tidak mengganggu satwa liar."]
   ],
   "Describing Places and Giving Information": [
-["This is Baluran National Park.", "Ini adalah Taman Nasional Baluran."],
-  ["It’s known as the Africa of Java.", "Tempat ini dikenal sebagai Afrikanya Jawa."],
-  ["Here you can see wild animals like deer and buffalo.", "Di sini Anda bisa melihat hewan liar seperti rusa dan kerbau."],
-  ["This temple was built in the 15th century.", "Candi ini dibangun pada abad ke-15."],
-  ["This beach is famous for its sunset.", "Pantai ini terkenal dengan matahari terbenamnya."],
-  ["This building is a Dutch heritage site.", "Bangunan ini adalah peninggalan Belanda."],
-  ["The mountain is active, but it’s safe to visit.", "Gunungnya aktif, tapi aman untuk dikunjungi."],
-  ["Let me tell you a bit of history.", "Izinkan saya bercerita sedikit tentang sejarahnya."]
-],
- "Offering Help and Assistance": [
-["Do you need help?", "Apakah Anda butuh bantuan?"],
-  ["Can I take a photo for you?", "Bolehkah saya ambilkan foto Anda?"],
-  ["Do you want me to explain that again?", "Apakah Anda ingin saya jelaskan lagi?"],
-  ["Let me assist you.", "Biar saya bantu."],
-  ["Please let me know if you need anything.", "Beri tahu saya jika Anda butuh sesuatu."],
-  ["Do you have any questions?", "Apakah ada pertanyaan?"],
-  ["Would you like a recommendation?", "Ingin rekomendasi?"],
-  ["I’ll help you find it.", "Saya akan bantu menemukannya."]
-],
-"Recommending Local Food and Souvenirs": [
-  ["You should try our traditional food.", "Anda harus mencoba makanan tradisional kami."],
-  ["This is a popular local snack.", "Ini adalah camilan lokal yang populer."],
-  ["The market sells handmade souvenirs.", "Pasar ini menjual suvenir buatan tangan."],
-  ["I recommend this restaurant.", "Saya merekomendasikan restoran ini."],
-  ["Would you like to buy a souvenir?", "Ingin membeli suvenir?"],
-  ["This is a specialty from Situbondo.", "Ini adalah oleh-oleh khas Situbondo."]
-],
-" Making and Responding to Invitations": [
-["Would you like to join our afternoon walk?", "Mau ikut jalan sore kami?"],
-  ["Let’s explore the mangrove forest.", "Ayo kita jelajahi hutan mangrove."],
-  ["We’ll have a group photo after this.", "Kita akan berfoto bersama setelah ini."],
-  ["You are invited to our cultural show tonight.", "Anda diundang ke pertunjukan budaya malam ini."],
-  ["Please join us for dinner.", "Silakan bergabung untuk makan malam."],
-  ["We’ll meet again tomorrow morning.", "Kita akan bertemu lagi besok pagi."]
-],
-"Expressing Gratitude and Farewell": [
-["Thank you for joining the tour.", "Terima kasih telah ikut tur."],
-  ["I hope you had a great time.", "Saya harap Anda menikmati waktunya."],
-  ["Have a safe trip!", "Selamat perjalanan!"],
-  ["See you next time!", "Sampai jumpa lain waktu!"],
-  ["It was a pleasure guiding you.", "Senang sekali bisa memandu Anda."],
-  ["Goodbye and take care!", "Selamat tinggal dan hati-hati!"]
-],
-"Managing Time and Schedules": [
-  ["We will depart at 8 a.m.", "Kita akan berangkat pukul 8 pagi."],
-  ["Please be on time.", "Tolong datang tepat waktu."],
-  ["You have 30 minutes to explore.", "Anda punya waktu 30 menit untuk berkeliling."],
-  ["We’ll meet back here at noon.", "Kita akan bertemu kembali di sini pukul 12 siang."],
-  ["Lunch will be at 1 p.m.", "Makan siang akan dilakukan pukul 1 siang."],
-  ["We’re running a bit late.", "Kita sedikit terlambat."],
-  ["Let’s stick to the schedule.", "Mari kita tetap sesuai jadwal."],
-  ["We’ll leave after the show ends.", "Kita akan pergi setelah pertunjukan selesai."],
-  ["Please return to the bus by 3 p.m.", "Tolong kembali ke bus pukul 3 sore."],
-  ["I’ll remind you 10 minutes before departure.", "Saya akan mengingatkan 10 menit sebelum keberangkatan."]
-],
-"Ensuring Safety and Comfort": [
-  ["Please drink enough water.", "Tolong minum air yang cukup."],
-  ["Let me know if you feel unwell.", "Beri tahu saya jika Anda merasa tidak enak badan."],
-  ["Don’t wander off alone.", "Jangan berjalan sendiri."],
-  ["Keep your belongings safe.", "Jaga barang bawaan Anda."],
-  ["Please wear comfortable shoes.", "Tolong kenakan sepatu yang nyaman."],
-  ["Use sunscreen if needed.", "Gunakan tabir surya jika perlu."],
-  ["Watch your step on uneven ground.", "Perhatikan langkah Anda di tanah yang tidak rata."],
-  ["Let me know if you need a break.", "Beri tahu saya jika Anda butuh istirahat."],
-  ["Be careful around the animals.", "Hati-hati dengan hewan di sekitar."],
-  ["Emergency contacts are on this card.", "Kontak darurat ada di kartu ini."]
-]
+    ["This is Baluran National Park.", "Ini adalah Taman Nasional Baluran."],
+    ["It’s known as the Africa of Java.", "Tempat ini dikenal sebagai Afrikanya Jawa."],
+    ["Here you can see wild animals like deer and buffalo.", "Di sini Anda bisa melihat hewan liar seperti rusa dan kerbau."],
+    ["This temple was built in the 15th century.", "Candi ini dibangun pada abad ke-15."],
+    ["This beach is famous for its sunset.", "Pantai ini terkenal dengan matahari terbenamnya."],
+    ["This building is a Dutch heritage site.", "Bangunan ini adalah peninggalan Belanda."],
+    ["The mountain is active, but it’s safe to visit.", "Gunungnya aktif, tapi aman untuk dikunjungi."],
+    ["Let me tell you a bit of history.", "Izinkan saya bercerita sedikit tentang sejarahnya."],
+    ["This forest is home to many endangered species.", "Hutan ini adalah rumah bagi banyak spesies langka."],
+    ["The mangrove here helps protect the coastline.", "Mangrove di sini membantu melindungi garis pantai."],
+    ["This area is a conservation site, so please respect it.", "Area ini adalah situs konservasi, jadi tolong hargai."]
+  ],
+  "Offering Help and Assistance": [
+    ["Do you need help?", "Apakah Anda butuh bantuan?"],
+    ["Can I take a photo for you?", "Bolehkah saya ambilkan foto Anda?"],
+    ["Do you want me to explain that again?", "Apakah Anda ingin saya jelaskan lagi?"],
+    ["Let me assist you.", "Biar saya bantu."],
+    ["Please let me know if you need anything.", "Beri tahu saya jika Anda butuh sesuatu."],
+    ["Do you have any questions?", "Apakah ada pertanyaan?"],
+    ["Would you like a recommendation?", "Ingin rekomendasi?"],
+    ["I’ll help you find it.", "Saya akan bantu menemukannya."],
+    ["Would you like a reusable water bottle refill?", "Apakah Anda ingin isi ulang botol minum ramah lingkungan?"],
+    ["Do you need help sorting your trash?", "Apakah Anda perlu bantuan memilah sampah?"],
+    ["I can show you where to recycle items.", "Saya bisa tunjukkan tempat daur ulang barang."]
+  ],
+  "Recommending Local Food and Souvenirs": [
+    ["You should try our traditional food.", "Anda harus mencoba makanan tradisional kami."],
+    ["This is a popular local snack.", "Ini adalah camilan lokal yang populer."],
+    ["The market sells handmade souvenirs.", "Pasar ini menjual suvenir buatan tangan."],
+    ["I recommend this restaurant.", "Saya merekomendasikan restoran ini."],
+    ["Would you like to buy a souvenir?", "Ingin membeli suvenir?"],
+    ["This is a specialty from Situbondo.", "Ini adalah oleh-oleh khas Situbondo."],
+    ["Try eco-friendly products made from bamboo.", "Cobalah produk ramah lingkungan yang terbuat dari bambu."],
+    ["This shop offers reusable local crafts.", "Toko ini menawarkan kerajinan lokal yang bisa digunakan kembali."],
+    ["I recommend food stalls that avoid plastic packaging.", "Saya merekomendasikan warung yang tidak menggunakan plastik sekali pakai."]
+  ],
+  "Making and Responding to Invitations": [
+    ["Would you like to join our afternoon walk?", "Mau ikut jalan sore kami?"],
+    ["Let’s explore the mangrove forest.", "Ayo kita jelajahi hutan mangrove."],
+    ["We’ll have a group photo after this.", "Kita akan berfoto bersama setelah ini."],
+    ["You are invited to our cultural show tonight.", "Anda diundang ke pertunjukan budaya malam ini."],
+    ["Please join us for dinner.", "Silakan bergabung untuk makan malam."],
+    ["We’ll meet again tomorrow morning.", "Kita akan bertemu lagi besok pagi."],
+    ["Join us for a beach cleanup tomorrow morning.", "Ikutlah bersama kami membersihkan pantai besok pagi."],
+    ["Would you like to plant a mangrove tree?", "Mau menanam pohon mangrove?"],
+    ["Let’s join the eco-tour activity together.", "Mari ikut kegiatan tur ramah lingkungan bersama."]
+  ],
+  "Expressing Gratitude and Farewell": [
+    ["Thank you for joining the tour.", "Terima kasih telah ikut tur."],
+    ["I hope you had a great time.", "Saya harap Anda menikmati waktunya."],
+    ["Have a safe trip!", "Selamat perjalanan!"],
+    ["See you next time!", "Sampai jumpa lain waktu!"],
+    ["It was a pleasure guiding you.", "Senang sekali bisa memandu Anda."],
+    ["Goodbye and take care!", "Selamat tinggal dan hati-hati!"],
+    ["Thank you for helping us protect nature.", "Terima kasih telah membantu menjaga alam."],
+    ["We appreciate your eco-friendly attitude.", "Kami menghargai sikap ramah lingkungan Anda."],
+    ["Let’s meet again for another green journey!", "Mari bertemu lagi untuk perjalanan ramah lingkungan berikutnya!"]
+  ],
+  "Managing Time and Schedules": [
+    ["We will depart at 8 a.m.", "Kita akan berangkat pukul 8 pagi."],
+    ["Please be on time.", "Tolong datang tepat waktu."],
+    ["You have 30 minutes to explore.", "Anda punya waktu 30 menit untuk berkeliling."],
+    ["We’ll meet back here at noon.", "Kita akan bertemu kembali di sini pukul 12 siang."],
+    ["Lunch will be at 1 p.m.", "Makan siang akan dilakukan pukul 1 siang."],
+    ["We’re running a bit late.", "Kita sedikit terlambat."],
+    ["Let’s stick to the schedule.", "Mari kita tetap sesuai jadwal."],
+    ["We’ll leave after the show ends.", "Kita akan pergi setelah pertunjukan selesai."],
+    ["Please return to the bus by 3 p.m.", "Tolong kembali ke bus pukul 3 sore."],
+    ["I’ll remind you 10 minutes before departure.", "Saya akan mengingatkan 10 menit sebelum keberangkatan."],
+    ["We’ll have a short break to collect trash responsibly.", "Kita akan istirahat sebentar untuk memungut sampah dengan bijak."],
+    ["Let’s use our time wisely and respect the environment.", "Mari gunakan waktu kita dengan bijak dan menghormati lingkungan."],
+    ["We’ll schedule a visit to the eco-park tomorrow.", "Besok kita akan menjadwalkan kunjungan ke taman ekowisata."]
+  ],
+  "Ensuring Safety and Comfort": [
+    ["Please drink enough water.", "Tolong minum air yang cukup."],
+    ["Let me know if you feel unwell.", "Beri tahu saya jika Anda merasa tidak enak badan."],
+    ["Don’t wander off alone.", "Jangan berjalan sendiri."],
+    ["Keep your belongings safe.", "Jaga barang bawaan Anda."],
+    ["Please wear comfortable shoes.", "Tolong kenakan sepatu yang nyaman."],
+    ["Use sunscreen if needed.", "Gunakan tabir surya jika perlu."],
+    ["Watch your step on uneven ground.", "Perhatikan langkah Anda di tanah yang tidak rata."],
+    ["Let me know if you need a break.", "Beri tahu saya jika Anda butuh istirahat."],
+    ["Be careful around the animals.", "Hati-hati dengan hewan di sekitar."],
+    ["Emergency contacts are on this card.", "Kontak darurat ada di kartu ini."],
+    ["Please avoid using single-use plastics.", "Tolong hindari penggunaan plastik sekali pakai."],
+    ["Keep nature safe for the next visitors.", "Jagalah alam agar aman untuk pengunjung berikutnya."],
+    ["Respect the environment as you respect your safety.", "Hormati lingkungan sebagaimana Anda menghormati keselamatan Anda."]
+  ]
 }
