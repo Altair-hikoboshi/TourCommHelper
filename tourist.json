@@ -7,7 +7,17 @@
     ["Can I have the room key?", "Boleh saya minta kunci kamar?"],
     ["Do you provide refill stations for water bottles?", "Apakah tersedia tempat isi ulang botol minum?"],
     ["Is this hotel eco-friendly?", "Apakah hotel ini ramah lingkungan?"],
-    ["Do you practice recycling here?", "Apakah di sini ada praktik daur ulang?"]
+    ["Do you practice recycling here?", "Apakah di sini ada praktik daur ulang?"],
+    ["Do you provide reusable bottles for guests?", "Apakah Anda menyediakan botol minum yang bisa dipakai ulang untuk tamu?"],
+    ["Is this hotel using solar energy?", "Apakah hotel ini menggunakan energi surya?"],
+    ["Do you separate organic and plastic waste?", "Apakah sampah organik dan plastik dipisahkan di sini?"],
+    ["Can I refill my bottle with filtered water?", "Bisakah saya isi ulang botol saya dengan air filter?"],
+    ["Does this place support local eco-programs?", "Apakah tempat ini mendukung program ramah lingkungan lokal?"],
+    ["Are the rooms designed to save energy?", "Apakah kamar di sini dirancang untuk hemat energi?"],
+    ["Do you limit single-use plastics here?", "Apakah Anda membatasi plastik sekali pakai di sini?"],
+    ["Is this accommodation certified eco-lodge?", "Apakah akomodasi ini bersertifikat eco-lodge?"],
+    ["Do you encourage guests to save water?", "Apakah Anda mendorong tamu untuk hemat air?"],
+    ["Do you compost food waste here?", "Apakah Anda membuat kompos dari sampah makanan di sini?"]
   ],
   "Getting Around": [
     ["Where can I get a taxi?", "Di mana saya bisa mendapatkan taksi?"],
@@ -22,7 +32,17 @@
     ["Please stop here.", "Tolong berhenti di sini."],
     ["Do you recommend eco-friendly transport?", "Apakah Anda merekomendasikan transportasi ramah lingkungan?"],
     ["Is there a bicycle rental nearby?", "Apakah ada penyewaan sepeda di dekat sini?"],
-    ["I prefer public transport to reduce pollution.", "Saya lebih suka transportasi umum untuk mengurangi polusi."]
+    ["I prefer public transport to reduce pollution.", "Saya lebih suka transportasi umum untuk mengurangi polusi."],
+    ["Is there a shuttle to the mangrove area?", "Apakah ada shuttle ke area mangrove?"],
+    ["Where can I rent an electric motorbike?", "Di mana saya bisa menyewa motor listrik?"],
+    ["Do you use biodiesel for local transport?", "Apakah transportasi lokal di sini menggunakan biodiesel?"],
+    ["Is there a walking trail to the beach?", "Apakah ada jalur jalan kaki menuju pantai?"],
+    ["Do you suggest cycling tours here?", "Apakah Anda menyarankan tur bersepeda di sini?"],
+    ["Where can I join a carpool to the village?", "Di mana saya bisa ikut carpool ke desa?"],
+    ["Is there a shared transport service for tourists?", "Apakah ada layanan transportasi bersama untuk turis?"],
+    ["Can I use a public boat to the island?", "Bisakah saya menggunakan perahu umum ke pulau?"],
+    ["Do you promote low-emission travel?", "Apakah Anda mempromosikan perjalanan rendah emisi?"],
+    ["Are there eco-friendly city tours?", "Apakah ada tur kota ramah lingkungan?"]
   ],
   "Ordering Food and Drinks": [
     ["Can I see the menu?", "Boleh saya lihat menu?"],
@@ -37,7 +57,17 @@
     ["Do you have vegetarian options?", "Apakah ada pilihan vegetarian?"],
     ["Do you use locally sourced ingredients?", "Apakah Anda menggunakan bahan lokal?"],
     ["Can I have this without plastic straw?", "Boleh saya pesan tanpa sedotan plastik?"],
-    ["Do you serve organic food?", "Apakah Anda menyajikan makanan organik?"]
+    ["Do you serve organic food?", "Apakah Anda menyajikan makanan organik?"],
+    ["Do you avoid food waste here?", "Apakah di sini menghindari pemborosan makanan?"],
+    ["Can I get this meal in a banana leaf wrap?", "Boleh saya pesan dengan bungkus daun pisang?"],
+    ["Is your seafood caught sustainably?", "Apakah seafood Anda ditangkap secara berkelanjutan?"],
+    ["Do you serve traditional food from Situbondo?", "Apakah Anda menyajikan makanan tradisional Situbondo?"],
+    ["Can I take leftovers in a reusable container?", "Boleh saya bawa sisa makanan dengan wadah pakai ulang?"],
+    ["Do you partner with local farmers?", "Apakah Anda bekerja sama dengan petani lokal?"],
+    ["Is the coffee grown locally without chemicals?", "Apakah kopi ini ditanam lokal tanpa bahan kimia?"],
+    ["Do you use natural cleaning products in the kitchen?", "Apakah dapur ini menggunakan pembersih alami?"],
+    ["Can I get a refill instead of a new cup?", "Boleh isi ulang saja daripada gelas baru?"],
+    ["Do you provide eco-friendly packaging for take-away?", "Apakah tersedia kemasan ramah lingkungan untuk bungkus?"]
   ],
   "Sightseeing and Asking Questions": [
     ["What is this place called?", "Apa nama tempat ini?"],
@@ -52,7 +82,17 @@
     ["Is there a restroom nearby?", "Apakah ada toilet di dekat sini?"],
     ["Is this area protected for conservation?", "Apakah area ini dilindungi untuk konservasi?"],
     ["How do locals protect the environment here?", "Bagaimana penduduk lokal menjaga lingkungan di sini?"],
-    ["Are there eco-tours available?", "Apakah ada tur ramah lingkungan?"]
+    ["Are there eco-tours available?", "Apakah ada tur ramah lingkungan?"],
+    ["Is this mangrove forest protected?", "Apakah hutan mangrove ini dilindungi?"],
+    ["Can we visit a turtle conservation site?", "Bisakah kita mengunjungi tempat konservasi penyu?"],
+    ["Is there a coral reef restoration project here?", "Apakah ada proyek restorasi terumbu karang di sini?"],
+    ["Do you limit visitors to reduce impact?", "Apakah jumlah pengunjung dibatasi untuk mengurangi dampak?"],
+    ["Can we plant mangrove trees here?", "Bisakah kita menanam mangrove di sini?"],
+    ["How do locals protect this national park?", "Bagaimana penduduk lokal menjaga taman nasional ini?"],
+    ["Is there a program to protect local birds?", "Apakah ada program untuk melindungi burung lokal?"],
+    ["Can we join a beach clean-up?", "Bisakah kami ikut bersih-bersih pantai?"],
+    ["Is this waterfall area safe from pollution?", "Apakah area air terjun ini aman dari polusi?"],
+    ["Do guides here share eco-friendly tips?", "Apakah pemandu di sini memberi tips ramah lingkungan?"]
   ],
   "Shopping and Bargaining": [
     ["How much is this?", "Berapa harganya?"],
@@ -67,7 +107,17 @@
     ["Is it a local product?", "Apakah ini produk lokal?"],
     ["Do you have eco-friendly products?", "Apakah ada produk ramah lingkungan?"],
     ["Is this made from recycled materials?", "Apakah ini terbuat dari bahan daur ulang?"],
-    ["I prefer reusable over single-use items.", "Saya lebih suka barang yang bisa dipakai ulang daripada sekali pakai."]
+    ["I prefer reusable over single-use items.", "Saya lebih suka barang yang bisa dipakai ulang daripada sekali pakai."],
+    ["Is this product made from bamboo?", "Apakah produk ini terbuat dari bambu?"],
+    ["Do you use eco-friendly dyes for fabrics?", "Apakah kain ini menggunakan pewarna ramah lingkungan?"],
+    ["Can I get this without plastic packaging?", "Bisa tanpa kemasan plastik?"],
+    ["Is this souvenir made by local artisans?", "Apakah suvenir ini dibuat pengrajin lokal?"],
+    ["Do you sell traditional eco crafts?", "Apakah Anda menjual kerajinan ramah lingkungan tradisional?"],
+    ["Can I buy something to support conservation?", "Bisa saya beli barang untuk mendukung konservasi?"],
+    ["Is this batik colored with natural materials?", "Apakah batik ini diwarnai dengan bahan alami?"],
+    ["Do you have reusable shopping bags?", "Apakah ada tas belanja pakai ulang?"],
+    ["Is this basket made from palm leaves?", "Apakah keranjang ini terbuat dari daun lontar?"],
+    ["Do you sell organic body care products?", "Apakah Anda menjual produk perawatan tubuh organik?"]
   ],
   "Emergencies and Help": [
     ["I need help.", "Saya butuh bantuan."],
@@ -82,7 +132,17 @@
     ["I’m allergic to...", "Saya alergi terhadap..."],
     ["Is there a safe place to shelter from natural disasters?", "Apakah ada tempat aman untuk berlindung dari bencana alam?"],
     ["Where is the emergency evacuation route?", "Di mana jalur evakuasi darurat?"],
-    ["Can you help me contact an environmental rescue group?", "Bisakah Anda membantu saya menghubungi tim penyelamat lingkungan?"]
+    ["Can you help me contact an environmental rescue group?", "Bisakah Anda membantu saya menghubungi tim penyelamat lingkungan?"],
+    ["Where can I report illegal logging?", "Di mana saya bisa melapor pembalakan liar?"],
+    ["Who should I contact if I see a forest fire?", "Siapa yang harus saya hubungi jika melihat kebakaran hutan?"],
+    ["Is there a hotline for animal rescue?", "Apakah ada hotline untuk penyelamatan satwa?"],
+    ["Can you guide me to the evacuation center?", "Bisakah Anda menunjukkan saya ke pusat evakuasi?"],
+    ["Is there a local disaster response team?", "Apakah ada tim tanggap bencana lokal?"],
+    ["How do I report pollution in the river?", "Bagaimana cara melapor pencemaran di sungai?"],
+    ["Where can I get info on tsunami safety?", "Di mana saya bisa dapat info keamanan tsunami?"],
+    ["Do you have a contact for mangrove patrol?", "Apakah ada kontak patroli mangrove?"],
+    ["Is there a safe zone in case of eruption?", "Apakah ada zona aman jika terjadi erupsi?"],
+    ["Can you call the environmental authority?", "Bisakah Anda menghubungi pihak lingkungan hidup?"]
   ],
   "Expressing Gratitude and Courtesy": [
     ["Thank you very much!", "Terima kasih banyak!"],
@@ -97,7 +157,17 @@
     ["You're welcome.", "Sama-sama."],
     ["Thank you for caring about the environment.", "Terima kasih sudah peduli lingkungan."],
     ["I appreciate your eco-friendly efforts.", "Saya menghargai upaya ramah lingkungan Anda."],
-    ["Thanks for reducing plastic waste.", "Terima kasih telah mengurangi sampah plastik."]
+    ["Thanks for reducing plastic waste.", "Terima kasih telah mengurangi sampah plastik."],
+    ["Thanks for keeping the beach clean.", "Terima kasih sudah menjaga pantai tetap bersih."],
+    ["I admire your effort to protect mangroves.", "Saya kagum dengan upaya Anda melindungi mangrove."],
+    ["I’m grateful for your eco-tour guidance.", "Saya berterima kasih atas panduan eco-tour Anda."],
+    ["Thank you for supporting local farmers.", "Terima kasih sudah mendukung petani lokal."],
+    ["I appreciate your no-plastic policy.", "Saya menghargai kebijakan tanpa plastik Anda."],
+    ["Thanks for using renewable energy here.", "Terima kasih sudah menggunakan energi terbarukan di sini."],
+    ["I admire how you recycle creatively.", "Saya kagum bagaimana Anda mendaur ulang dengan kreatif."],
+    ["Thank you for educating visitors.", "Terima kasih sudah mendidik pengunjung."],
+    ["I appreciate your efforts to save water.", "Saya menghargai upaya Anda menghemat air."],
+    ["Thanks for inspiring eco-awareness.", "Terima kasih telah menginspirasi kesadaran lingkungan."]
   ],
   "At the Airport": [
     ["Where is the check-in counter?", "Di mana loket check-in?"],
@@ -112,7 +182,17 @@
     ["Where can I exchange money?", "Di mana saya bisa menukar uang?"],
     ["Is there a recycling bin in the airport?", "Apakah ada tempat daur ulang di bandara?"],
     ["Do airlines here support carbon offset programs?", "Apakah maskapai di sini mendukung program pengimbangan karbon?"],
-    ["Can I carry a reusable water bottle through security?", "Apakah saya boleh membawa botol minum isi ulang melalui keamanan?"]
+    ["Can I carry a reusable water bottle through security?", "Apakah saya boleh membawa botol minum isi ulang melalui keamanan?"],
+    ["Do you separate trash at the airport?", "Apakah sampah di bandara dipilah?"],
+    ["Is there a green zone for eco-travelers?", "Apakah ada zona hijau untuk wisatawan ramah lingkungan?"],
+    ["Can I refill my bottle before boarding?", "Bisakah saya isi ulang botol sebelum naik pesawat?"],
+    ["Do airlines here reduce single-use plastics?", "Apakah maskapai di sini mengurangi plastik sekali pakai?"],
+    ["Is there a policy to reduce flight emissions?", "Apakah ada kebijakan mengurangi emisi penerbangan?"],
+    ["Do you use renewable energy in this terminal?", "Apakah terminal ini menggunakan energi terbarukan?"],
+    ["Are there eco-friendly souvenirs at the airport shop?", "Apakah ada suvenir ramah lingkungan di toko bandara?"],
+    ["Is this airport part of a green initiative?", "Apakah bandara ini bagian dari inisiatif hijau?"],
+    ["Do you reward passengers bringing reusable cups?", "Apakah penumpang yang membawa gelas isi ulang mendapat penghargaan?"],
+    ["Can I find organic food in the airport café?", "Apakah ada makanan organik di kafe bandara?"]
   ],
   "Talking About Activities and Plans": [
     ["What can we do here?", "Apa yang bisa kita lakukan di sini?"],
@@ -127,6 +207,16 @@
     ["Let’s take some photos here.", "Ayo ambil foto di sini."],
     ["Can we join a beach cleanup activity?", "Bisa ikut kegiatan bersih-bersih pantai?"],
     ["Is there a tree-planting program nearby?", "Apakah ada program penanaman pohon di sekitar sini?"],
-    ["Let’s plan an eco-tour tomorrow.", "Mari rencanakan tur ramah lingkungan besok."]
+    ["Let’s plan an eco-tour tomorrow.", "Mari rencanakan tur ramah lingkungan besok."],
+    ["Let’s visit the mangrove forest tomorrow.", "Ayo besok kunjungi hutan mangrove."],
+    ["Can we volunteer for conservation here?", "Bisakah kita jadi relawan konservasi di sini?"],
+    ["Is there a local organic farm tour?", "Apakah ada tur ke kebun organik lokal?"],
+    ["Can we try traditional eco-crafts workshop?", "Bisakah kita ikut lokakarya kerajinan ramah lingkungan tradisional?"],
+    ["Let’s support a wildlife conservation project.", "Ayo dukung proyek konservasi satwa liar."],
+    ["Is there a zero-waste cooking class here?", "Apakah ada kelas memasak zero-waste di sini?"],
+    ["Can we go birdwatching with a local guide?", "Bisakah kita mengamati burung dengan pemandu lokal?"],
+    ["Is there a cycling eco-tour available?", "Apakah ada tur sepeda ramah lingkungan?"],
+    ["Can we visit a renewable energy project?", "Bisakah kita mengunjungi proyek energi terbarukan?"],
+    ["Let’s attend a cultural event that supports nature.", "Mari hadiri acara budaya yang mendukung alam."]
   ]
 }
