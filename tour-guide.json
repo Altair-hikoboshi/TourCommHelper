@@ -10,7 +10,16 @@
     ["Please stay with the group.", "Tolong tetap bersama rombongan."],
     ["We love welcoming eco-friendly travelers.", "Kami senang menyambut wisatawan yang peduli lingkungan."],
     ["Let’s enjoy Situbondo while keeping it clean.", "Mari nikmati Situbondo sambil menjaganya tetap bersih."],
-    ["Together, let’s respect nature during our tour.", "Mari bersama-sama menghargai alam selama tur."]
+    ["Together, let’s respect nature during our tour.", "Mari bersama-sama menghargai alam selama tur."],
+    ["Situbondo is beautiful, let’s help keep it that way.", "Situbondo ini indah, mari kita jaga tetap begitu."],
+    ["We appreciate your effort to travel sustainably.", "Kami menghargai usaha Anda untuk berwisata secara berkelanjutan."],
+    ["Thank you for bringing your reusable bottles.", "Terima kasih sudah membawa botol minum isi ulang."],
+    ["Please remember: take only memories, leave only footprints.", "Ingatlah: bawa pulang kenangan, tinggalkan jejak kaki saja."],
+    ["We kindly ask you not to disturb wildlife.", "Kami mohon jangan mengganggu satwa liar."],
+    ["Welcome to the eco-friendly journey in Situbondo!", "Selamat datang di perjalanan ramah lingkungan di Situbondo!"],
+    ["We’re proud to share our clean and green culture.", "Kami bangga membagikan budaya bersih dan hijau kami."],
+    ["Let’s start today with respect for nature and each other.", "Mari mulai hari ini dengan menghargai alam dan satu sama lain."],
+    ["Thank you for joining a tour that supports conservation.", "Terima kasih telah ikut tur yang mendukung konservasi."]
   ],
   "Giving Directions and Instructions": [
     ["Please follow me.", "Silakan ikuti saya."],
@@ -23,7 +32,16 @@
     ["Let’s gather at the meeting point.", "Mari berkumpul di titik pertemuan."],
     ["Please do not litter along the way.", "Tolong jangan buang sampah sembarangan di jalan."],
     ["Stay on the trail to protect the plants.", "Tetap di jalur untuk melindungi tanaman."],
-    ["Let’s reduce noise to avoid disturbing wildlife.", "Mari kurangi kebisingan agar tidak mengganggu satwa liar."]
+    ["Let’s reduce noise to avoid disturbing wildlife.", "Mari kurangi kebisingan agar tidak mengganggu satwa liar."],
+    ["Keep your bottles until we find a refill station.", "Simpan botol Anda sampai kita menemukan tempat isi ulang."],
+    ["Please don’t touch the coral or marine animals.", "Tolong jangan menyentuh karang atau hewan laut."],
+    ["Let’s use the trash bins provided, not the ground.", "Mari gunakan tempat sampah yang tersedia, bukan tanah."],
+    ["Stay together so we minimize our impact on nature.", "Tetap bersama agar dampak kita pada alam minimal."],
+    ["Walk gently to avoid damaging small plants.", "Berjalanlah pelan agar tidak merusak tanaman kecil."],
+    ["Keep food wrappers in your bag until disposal.", "Simpan bungkus makanan di tas Anda sampai dibuang."],
+    ["Please refill water instead of buying plastic bottles.", "Tolong isi ulang air daripada membeli botol plastik."],
+    ["Let’s leave natural items where we find them.", "Mari tinggalkan benda alami di tempat kita menemukannya."],
+    ["Respect the sacred sites by not leaving trash.", "Hormati tempat suci dengan tidak meninggalkan sampah."]
   ],
   "Describing Places and Giving Information": [
     ["This is Baluran National Park.", "Ini adalah Taman Nasional Baluran."],
@@ -36,7 +54,16 @@
     ["Let me tell you a bit of history.", "Izinkan saya bercerita sedikit tentang sejarahnya."],
     ["This forest is home to many endangered species.", "Hutan ini adalah rumah bagi banyak spesies langka."],
     ["The mangrove here helps protect the coastline.", "Mangrove di sini membantu melindungi garis pantai."],
-    ["This area is a conservation site, so please respect it.", "Area ini adalah situs konservasi, jadi tolong hargai."]
+    ["This area is a conservation site, so please respect it.", "Area ini adalah situs konservasi, jadi tolong hargai."],
+    ["Local people here live in harmony with nature.", "Penduduk lokal di sini hidup selaras dengan alam."],
+    ["This river provides clean water for the community.", "Sungai ini menyediakan air bersih untuk masyarakat."],
+    ["The coral reef here is very fragile.", "Terumbu karang di sini sangat rapuh."],
+    ["This park is part of Indonesia’s eco-tourism program.", "Taman ini adalah bagian dari program ekowisata Indonesia."],
+    ["Birds you see here are protected species.", "Burung yang Anda lihat di sini adalah spesies yang dilindungi."],
+    ["This forest plays a role in reducing climate change.", "Hutan ini berperan dalam mengurangi perubahan iklim."],
+    ["Local farmers practice organic farming here.", "Petani lokal di sini menerapkan pertanian organik."],
+    ["This is a plastic-free zone to protect the ecosystem.", "Ini adalah zona bebas plastik untuk melindungi ekosistem."],
+    ["The area is managed with community-based conservation.", "Wilayah ini dikelola dengan konservasi berbasis masyarakat."]
   ],
   "Offering Help and Assistance": [
     ["Do you need help?", "Apakah Anda butuh bantuan?"],
@@ -49,7 +76,16 @@
     ["I’ll help you find it.", "Saya akan bantu menemukannya."],
     ["Would you like a reusable water bottle refill?", "Apakah Anda ingin isi ulang botol minum ramah lingkungan?"],
     ["Do you need help sorting your trash?", "Apakah Anda perlu bantuan memilah sampah?"],
-    ["I can show you where to recycle items.", "Saya bisa tunjukkan tempat daur ulang barang."]
+    ["I can show you where to recycle items.", "Saya bisa tunjukkan tempat daur ulang barang."],
+    ["Would you like me to show eco-friendly shops nearby?", "Mau saya tunjukkan toko ramah lingkungan di sekitar sini?"],
+    ["Do you need sunscreen made from natural ingredients?", "Apakah Anda butuh tabir surya dari bahan alami?"],
+    ["I can help you find vegetarian or vegan food.", "Saya bisa bantu mencari makanan vegetarian atau vegan."],
+    ["Do you want to know where to rent bicycles?", "Apakah Anda ingin tahu tempat menyewa sepeda?"],
+    ["Would you like assistance in finding eco-tours?", "Mau saya bantu mencari tur ramah lingkungan?"],
+    ["I can show you refill stations for your bottle.", "Saya bisa tunjukkan tempat isi ulang botol minum Anda."],
+    ["Do you need help contacting local conservation groups?", "Apakah Anda perlu bantuan menghubungi kelompok konservasi lokal?"],
+    ["I’ll guide you to the compost bin if needed.", "Saya akan menunjukkan tempat kompos jika perlu."],
+    ["Would you like me to explain how locals protect the area?", "Mau saya jelaskan bagaimana penduduk melindungi daerah ini?"]
   ],
   "Recommending Local Food and Souvenirs": [
     ["You should try our traditional food.", "Anda harus mencoba makanan tradisional kami."],
@@ -60,7 +96,17 @@
     ["This is a specialty from Situbondo.", "Ini adalah oleh-oleh khas Situbondo."],
     ["Try eco-friendly products made from bamboo.", "Cobalah produk ramah lingkungan yang terbuat dari bambu."],
     ["This shop offers reusable local crafts.", "Toko ini menawarkan kerajinan lokal yang bisa digunakan kembali."],
-    ["I recommend food stalls that avoid plastic packaging.", "Saya merekomendasikan warung yang tidak menggunakan plastik sekali pakai."]
+    ["I recommend food stalls that avoid plastic packaging.", "Saya merekomendasikan warung yang tidak menggunakan plastik sekali pakai."],
+    ["Look for spices from local organic farmers.", "Cari rempah-rempah dari petani organik lokal."],
+    ["You can buy coffee from sustainable farms.", "Anda bisa membeli kopi dari perkebunan berkelanjutan."],
+    ["This batik is made with natural dyes.", "Batik ini dibuat dengan pewarna alami."],
+    ["I recommend snacks without artificial preservatives.", "Saya merekomendasikan camilan tanpa pengawet buatan."],
+    ["These bags are made from recycled materials.", "Tas-tas ini terbuat dari bahan daur ulang."],
+    ["Support local crafts instead of factory products.", "Dukung kerajinan lokal, bukan produk pabrik."],
+    ["Try herbal drinks made from local plants.", "Cobalah minuman herbal dari tanaman lokal."],
+    ["Buy honey harvested sustainably.", "Beli madu yang dipanen secara berkelanjutan."],
+    ["Choose souvenirs with minimal packaging.", "Pilih suvenir dengan kemasan seminimal mungkin."],
+    ["These woven products are eco-friendly and durable.", "Produk anyaman ini ramah lingkungan dan tahan lama."]
   ],
   "Making and Responding to Invitations": [
     ["Would you like to join our afternoon walk?", "Mau ikut jalan sore kami?"],
@@ -71,7 +117,17 @@
     ["We’ll meet again tomorrow morning.", "Kita akan bertemu lagi besok pagi."],
     ["Join us for a beach cleanup tomorrow morning.", "Ikutlah bersama kami membersihkan pantai besok pagi."],
     ["Would you like to plant a mangrove tree?", "Mau menanam pohon mangrove?"],
-    ["Let’s join the eco-tour activity together.", "Mari ikut kegiatan tur ramah lingkungan bersama."]
+    ["Let’s join the eco-tour activity together.", "Mari ikut kegiatan tur ramah lingkungan bersama."],
+    ["Would you like to learn traditional eco-friendly crafts?", "Mau belajar kerajinan tradisional ramah lingkungan?"],
+    ["Please join us for an organic farm visit.", "Silakan ikut kunjungan ke kebun organik."],
+    ["Let’s attend a local eco-festival this weekend.", "Mari hadiri festival ramah lingkungan akhir pekan ini."],
+    ["Would you like to participate in a turtle release?", "Mau ikut melepas tukik ke laut?"],
+    ["Join us for a river clean-up activity.", "Ikutlah kegiatan bersih-bersih sungai."],
+    ["Would you like to help plant coral reefs?", "Mau membantu menanam terumbu karang?"],
+    ["Come with us to support a conservation program.", "Ikutlah bersama kami mendukung program konservasi."],
+    ["We invite you to a talk about climate awareness.", "Kami mengundang Anda ke diskusi tentang kesadaran iklim."],
+    ["Let’s take part in tree-planting tomorrow.", "Mari ikut penanaman pohon besok."],
+    ["Would you like to experience eco-cooking with locals?", "Mau mencoba memasak ramah lingkungan bersama warga?"]
   ],
   "Expressing Gratitude and Farewell": [
     ["Thank you for joining the tour.", "Terima kasih telah ikut tur."],
@@ -82,7 +138,17 @@
     ["Goodbye and take care!", "Selamat tinggal dan hati-hati!"],
     ["Thank you for helping us protect nature.", "Terima kasih telah membantu menjaga alam."],
     ["We appreciate your eco-friendly attitude.", "Kami menghargai sikap ramah lingkungan Anda."],
-    ["Let’s meet again for another green journey!", "Mari bertemu lagi untuk perjalanan ramah lingkungan berikutnya!"]
+    ["Let’s meet again for another green journey!", "Mari bertemu lagi untuk perjalanan ramah lingkungan berikutnya!"],
+    ["We’re grateful for your respect toward the environment.", "Kami bersyukur atas rasa hormat Anda pada lingkungan."],
+    ["Your small actions made a big difference today.", "Tindakan kecil Anda memberi dampak besar hari ini."],
+    ["We hope you’ll share eco-friendly habits back home.", "Kami harap Anda berbagi kebiasaan ramah lingkungan di rumah."],
+    ["Thanks for joining our zero-waste journey.", "Terima kasih telah ikut perjalanan bebas sampah kami."],
+    ["We appreciate your choice to support local communities.", "Kami menghargai pilihan Anda mendukung komunitas lokal."],
+    ["We’re happy you cared for Situbondo’s nature.", "Kami senang Anda peduli pada alam Situbondo."],
+    ["Safe travels, and keep traveling responsibly!", "Selamat jalan, dan teruslah berwisata dengan bijak!"],
+    ["Thank you for reducing plastic use during the tour.", "Terima kasih telah mengurangi penggunaan plastik selama tur."],
+    ["We look forward to another eco-friendly adventure.", "Kami menantikan petualangan ramah lingkungan berikutnya."],
+    ["Please recommend Situbondo as a green destination.", "Tolong rekomendasikan Situbondo sebagai destinasi hijau."]
   ],
   "Managing Time and Schedules": [
     ["We will depart at 8 a.m.", "Kita akan berangkat pukul 8 pagi."],
@@ -97,9 +163,15 @@
     ["I’ll remind you 10 minutes before departure.", "Saya akan mengingatkan 10 menit sebelum keberangkatan."],
     ["We’ll have a short break to collect trash responsibly.", "Kita akan istirahat sebentar untuk memungut sampah dengan bijak."],
     ["Let’s use our time wisely and respect the environment.", "Mari gunakan waktu kita dengan bijak dan menghormati lingkungan."],
-    ["We’ll schedule a visit to the eco-park tomorrow.", "Besok kita akan menjadwalkan kunjungan ke taman ekowisata."]
+    ["We’ll schedule a visit to the eco-park tomorrow.", "Besok kita akan menjadwalkan kunjungan ke taman ekowisata."],
+    ["Our break spot has a recycling station, please use it.", "Tempat istirahat kita ada stasiun daur ulang, tolong gunakan."],
+    ["We’ll dedicate time for tree planting this afternoon.", "Sore ini kita akan meluangkan waktu untuk menanam pohon."],
+    ["Please use waiting time to collect your trash.", "Gunakan waktu menunggu untuk mengumpulkan sampah Anda."],
+    ["Let’s take time to refill bottles before we continue.", "Mari isi ulang botol minum sebelum kita lanjutkan."],
+    ["We’ll end earlier to support the village cleanup event.", "Kita akan selesai lebih awal untuk mendukung acara bersih desa."],
+    ["Please respect time so our eco-activities stay on track.", "Hormati waktu agar kegiatan ramah lingkungan kita tetap berjalan."]
   ],
-  "Ensuring Safety and Comfort": [
+   "Ensuring Safety and Comfort": [
     ["Please drink enough water.", "Tolong minum air yang cukup."],
     ["Let me know if you feel unwell.", "Beri tahu saya jika Anda merasa tidak enak badan."],
     ["Don’t wander off alone.", "Jangan berjalan sendiri."],
@@ -112,6 +184,13 @@
     ["Emergency contacts are on this card.", "Kontak darurat ada di kartu ini."],
     ["Please avoid using single-use plastics.", "Tolong hindari penggunaan plastik sekali pakai."],
     ["Keep nature safe for the next visitors.", "Jagalah alam agar aman untuk pengunjung berikutnya."],
-    ["Respect the environment as you respect your safety.", "Hormati lingkungan sebagaimana Anda menghormati keselamatan Anda."]
+    ["Respect the environment as you respect your safety.", "Hormati lingkungan sebagaimana Anda menghormati keselamatan Anda."],
+    ["Stay with the group to avoid getting lost.", "Tetap bersama rombongan agar tidak tersesat."],
+    ["Please follow the safety instructions carefully.", "Tolong ikuti instruksi keselamatan dengan hati-hati."],
+    ["If you feel tired, let’s rest together for a while.", "Jika merasa lelah, mari kita istirahat sebentar bersama."],
+    ["Do not touch wild plants without guidance.", "Jangan menyentuh tanaman liar tanpa bimbingan."],
+    ["Please keep your hands clean before eating.", "Tolong cuci tangan Anda sebelum makan."],
+    ["Wear a hat or cap to protect yourself from the sun.", "Kenakan topi untuk melindungi diri dari sinar matahari."],
+    ["In case of emergency, stay calm and follow my lead.", "Jika terjadi keadaan darurat, tetap tenang dan ikuti saya."]
   ]
 }
