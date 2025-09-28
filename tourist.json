@@ -4,7 +4,10 @@
     ["Can I check in now?", "Bisakah saya check-in sekarang?"],
     ["I’d like to check out.", "Saya ingin check-out."],
     ["Where is the reception?", "Di mana resepsionisnya?"],
-    ["Can I have the room key?", "Boleh saya minta kunci kamar?"]
+    ["Can I have the room key?", "Boleh saya minta kunci kamar?"],
+    ["Do you provide refill stations for water bottles?", "Apakah tersedia tempat isi ulang botol minum?"],
+    ["Is this hotel eco-friendly?", "Apakah hotel ini ramah lingkungan?"],
+    ["Do you practice recycling here?", "Apakah di sini ada praktik daur ulang?"]
   ],
   "Getting Around": [
     ["Where can I get a taxi?", "Di mana saya bisa mendapatkan taksi?"],
@@ -16,7 +19,10 @@
     ["How do I get to the station?", "Bagaimana cara ke stasiun?"],
     ["Can I walk there?", "Bisa jalan kaki ke sana?"],
     ["Is it safe to go at night?", "Apakah aman pergi malam-malam?"],
-    ["Please stop here.", "Tolong berhenti di sini."]
+    ["Please stop here.", "Tolong berhenti di sini."],
+    ["Do you recommend eco-friendly transport?", "Apakah Anda merekomendasikan transportasi ramah lingkungan?"],
+    ["Is there a bicycle rental nearby?", "Apakah ada penyewaan sepeda di dekat sini?"],
+    ["I prefer public transport to reduce pollution.", "Saya lebih suka transportasi umum untuk mengurangi polusi."]
   ],
   "Ordering Food and Drinks": [
     ["Can I see the menu?", "Boleh saya lihat menu?"],
@@ -28,7 +34,10 @@
     ["Can I get the bill?", "Boleh minta tagihannya?"],
     ["That was delicious!", "Itu enak sekali!"],
     ["Is service included?", "Apakah biaya layanan sudah termasuk?"],
-    ["Do you have vegetarian options?", "Apakah ada pilihan vegetarian?"]
+    ["Do you have vegetarian options?", "Apakah ada pilihan vegetarian?"],
+    ["Do you use locally sourced ingredients?", "Apakah Anda menggunakan bahan lokal?"],
+    ["Can I have this without plastic straw?", "Boleh saya pesan tanpa sedotan plastik?"],
+    ["Do you serve organic food?", "Apakah Anda menyajikan makanan organik?"]
   ],
   "Sightseeing and Asking Questions": [
     ["What is this place called?", "Apa nama tempat ini?"],
@@ -40,7 +49,10 @@
     ["Is there a guide available?", "Apakah ada pemandu?"],
     ["How long does the tour take?", "Berapa lama tournya?"],
     ["Where is the next stop?", "Di mana perhentian berikutnya?"],
-    ["Is there a restroom nearby?", "Apakah ada toilet di dekat sini?"]
+    ["Is there a restroom nearby?", "Apakah ada toilet di dekat sini?"],
+    ["Is this area protected for conservation?", "Apakah area ini dilindungi untuk konservasi?"],
+    ["How do locals protect the environment here?", "Bagaimana penduduk lokal menjaga lingkungan di sini?"],
+    ["Are there eco-tours available?", "Apakah ada tur ramah lingkungan?"]
   ],
   "Shopping and Bargaining": [
     ["How much is this?", "Berapa harganya?"],
@@ -52,7 +64,10 @@
     ["I’ll take it.", "Saya ambil ini."],
     ["Is this handmade?", "Apakah ini buatan tangan?"],
     ["Where was this made?", "Ini dibuat di mana?"],
-    ["Is it a local product?", "Apakah ini produk lokal?"]
+    ["Is it a local product?", "Apakah ini produk lokal?"],
+    ["Do you have eco-friendly products?", "Apakah ada produk ramah lingkungan?"],
+    ["Is this made from recycled materials?", "Apakah ini terbuat dari bahan daur ulang?"],
+    ["I prefer reusable over single-use items.", "Saya lebih suka barang yang bisa dipakai ulang daripada sekali pakai."]
   ],
   "Emergencies and Help": [
     ["I need help.", "Saya butuh bantuan."],
@@ -64,7 +79,10 @@
     ["I don’t feel well.", "Saya tidak enak badan."],
     ["Where is the nearest pharmacy?", "Di mana apotek terdekat?"],
     ["I need a doctor.", "Saya butuh dokter."],
-    ["I’m allergic to...", "Saya alergi terhadap..."]
+    ["I’m allergic to...", "Saya alergi terhadap..."],
+    ["Is there a safe place to shelter from natural disasters?", "Apakah ada tempat aman untuk berlindung dari bencana alam?"],
+    ["Where is the emergency evacuation route?", "Di mana jalur evakuasi darurat?"],
+    ["Can you help me contact an environmental rescue group?", "Bisakah Anda membantu saya menghubungi tim penyelamat lingkungan?"]
   ],
   "Expressing Gratitude and Courtesy": [
     ["Thank you very much!", "Terima kasih banyak!"],
@@ -76,30 +94,39 @@
     ["Excuse me.", "Permisi."],
     ["Sorry!", "Maaf!"],
     ["Please.", "Tolong."],
-    ["You're welcome.", "Sama-sama."]
+    ["You're welcome.", "Sama-sama."],
+    ["Thank you for caring about the environment.", "Terima kasih sudah peduli lingkungan."],
+    ["I appreciate your eco-friendly efforts.", "Saya menghargai upaya ramah lingkungan Anda."],
+    ["Thanks for reducing plastic waste.", "Terima kasih telah mengurangi sampah plastik."]
   ],
   "At the Airport": [
-  ["Where is the check-in counter?", "Di mana loket check-in?"],
-  ["Can I have a window seat?", "Boleh minta kursi di dekat jendela?"],
-  ["What time is the boarding?", "Jam berapa naik pesawat?"],
-  ["Where is the gate?", "Di mana gerbangnya?"],
-  ["Is the flight on time?", "Apakah penerbangannya tepat waktu?"],
-  ["I’ve lost my luggage.", "Saya kehilangan bagasi saya."],
-  ["Where is the immigration office?", "Di mana kantor imigrasi?"],
-  ["Do I need to fill out a customs form?", "Apakah saya perlu mengisi formulir bea cukai?"],
-  ["This is my boarding pass.", "Ini boarding pass saya."],
-  ["Where can I exchange money?", "Di mana saya bisa menukar uang?"]
-],
-"Talking About Activities and Plans": [
-  ["What can we do here?", "Apa yang bisa kita lakukan di sini?"],
-  ["Is there anything interesting nearby?", "Ada sesuatu yang menarik di sekitar sini?"],
-  ["Can we go snorkeling?", "Bisa snorkeling di sini?"],
-  ["I’d like to visit the waterfall.", "Saya ingin mengunjungi air terjun."],
-  ["Is there a cultural show tonight?", "Apakah ada pertunjukan budaya malam ini?"],
-  ["Where can we go hiking?", "Di mana kita bisa hiking?"],
-  ["What time does it start?", "Jam berapa itu dimulai?"],
-  ["I’m planning to visit the market.", "Saya berencana mengunjungi pasar."],
-  ["We’re going to the hot springs.", "Kami akan pergi ke pemandian air panas."],
-  ["Let’s take some photos here.", "Ayo ambil foto di sini."]
-]
+    ["Where is the check-in counter?", "Di mana loket check-in?"],
+    ["Can I have a window seat?", "Boleh minta kursi di dekat jendela?"],
+    ["What time is the boarding?", "Jam berapa naik pesawat?"],
+    ["Where is the gate?", "Di mana gerbangnya?"],
+    ["Is the flight on time?", "Apakah penerbangannya tepat waktu?"],
+    ["I’ve lost my luggage.", "Saya kehilangan bagasi saya."],
+    ["Where is the immigration office?", "Di mana kantor imigrasi?"],
+    ["Do I need to fill out a customs form?", "Apakah saya perlu mengisi formulir bea cukai?"],
+    ["This is my boarding pass.", "Ini boarding pass saya."],
+    ["Where can I exchange money?", "Di mana saya bisa menukar uang?"],
+    ["Is there a recycling bin in the airport?", "Apakah ada tempat daur ulang di bandara?"],
+    ["Do airlines here support carbon offset programs?", "Apakah maskapai di sini mendukung program pengimbangan karbon?"],
+    ["Can I carry a reusable water bottle through security?", "Apakah saya boleh membawa botol minum isi ulang melalui keamanan?"]
+  ],
+  "Talking About Activities and Plans": [
+    ["What can we do here?", "Apa yang bisa kita lakukan di sini?"],
+    ["Is there anything interesting nearby?", "Ada sesuatu yang menarik di sekitar sini?"],
+    ["Can we go snorkeling?", "Bisa snorkeling di sini?"],
+    ["I’d like to visit the waterfall.", "Saya ingin mengunjungi air terjun."],
+    ["Is there a cultural show tonight?", "Apakah ada pertunjukan budaya malam ini?"],
+    ["Where can we go hiking?", "Di mana kita bisa hiking?"],
+    ["What time does it start?", "Jam berapa itu dimulai?"],
+    ["I’m planning to visit the market.", "Saya berencana mengunjungi pasar."],
+    ["We’re going to the hot springs.", "Kami akan pergi ke pemandian air panas."],
+    ["Let’s take some photos here.", "Ayo ambil foto di sini."],
+    ["Can we join a beach cleanup activity?", "Bisa ikut kegiatan bersih-bersih pantai?"],
+    ["Is there a tree-planting program nearby?", "Apakah ada program penanaman pohon di sekitar sini?"],
+    ["Let’s plan an eco-tour tomorrow.", "Mari rencanakan tur ramah lingkungan besok."]
+  ]
 }
